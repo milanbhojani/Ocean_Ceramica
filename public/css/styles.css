@@ -1151,7 +1151,7 @@ img.event {
   margin-left: 50px;
 }
 .info.enent {
-  border-bottom: 1px solid #26262d;
+  border-bottom: 1px solid #131347;
   padding-bottom: 20px;
 }
 .container.event .bottom{
@@ -1209,7 +1209,7 @@ span.point {
     letter-spacing: 0.05em;
 }
 .contacts.head-padding {
-  background-color: #26262d;
+  background-color: #131347;
   margin-top: 1% !important;
 }
 
@@ -1220,7 +1220,7 @@ p.my-list-heading.crtext {
   margin-bottom: 15px;
 }
 .container.my-li-list.text-center {
-  background-color: #26262d;
+  background-color: #131347;
   display: block;
   padding-bottom: 40px !important;
   border: none;
@@ -1397,7 +1397,7 @@ a, button, p, span {
 
     letter-spacing: 0.02em;
 
-    color: inherit;
+    color: #131347;
 
 }
 
@@ -1417,7 +1417,7 @@ input {
 
   font-family: 'Prompt', sans-serif;
 
-  color: #26262d;
+  color: #131347;
 
   font-weight: 400;
 
@@ -1954,6 +1954,8 @@ button[type="submit"]:hover::after {
 
   will-change: transform;
 
+  
+
 }
 
 .marquee:before {
@@ -2169,7 +2171,7 @@ button[type="submit"] {
 
     border: 1px solid #000;
 
-    color: #26262d;
+    color: #131347;
 
 }
 
@@ -2191,7 +2193,7 @@ input[type="submit"] {
 
   border: 1px solid #000 !important;
 
-  color: #26262d !important;
+  color: #131347 !important;
 
 }
 
@@ -2521,7 +2523,7 @@ input[type="checkbox"] {
 
   height: 2px;
 
-  background: #666;
+  background: #131347;
 
   left: 0;
 /*margin: 0 5px;*/
@@ -2554,7 +2556,7 @@ input[type="checkbox"] {
 
   height: 2px;
 /*margin: 0 5px;*/
-  background: #666;
+  background: #131347;
 
   left: 0;
 
@@ -2656,7 +2658,7 @@ input[type="checkbox"] {
 
   overflow: hidden;
 
-  background: #26262d;
+  background: #131347;
 
 }
 
@@ -2891,7 +2893,7 @@ input[type="checkbox"] {
 
   font-weight: 200;
 
-  color: #26262d;
+  color: #131347;
 
 }
 
@@ -3079,7 +3081,7 @@ font-size: 75px;
 
     letter-spacing: 0.025em;
 
-    color: #26262d;
+    color: #131347;
 
     line-height: 1.2;
 
@@ -3471,7 +3473,7 @@ font-size: 75px;
 
   letter-spacing: 0.025em;
 
-  color: #26262d;
+  color: #131347;
 
   line-height: 1.2;
 
@@ -3593,7 +3595,7 @@ font-size: 75px;
 
   font-family: 'Prompt', sans-serif;
 
-  color: #26262d;
+  color: #131347;
 
   text-transform: uppercase;
 
@@ -3783,7 +3785,7 @@ font-size: 75px;
 
   margin-top: 220px;
 
-  background: #26262d;
+  background: #131347;
 
 }
 
@@ -4379,7 +4381,7 @@ font-size: 75px;
 
   font-family: 'Prompt', sans-serif;
 
-  color: #26262d;
+  color: #131347;
 
   letter-spacing: 0.015em;
 
@@ -4391,7 +4393,7 @@ font-size: 75px;
 
   font-size: 17px;
 
-  color: #26262d;
+  color: #131347;
 
   font-weight: 200;
 
@@ -4423,7 +4425,7 @@ font-size: 75px;
 
   font-family: 'Prompt', sans-serif;
 
-  color: #26262d;
+  color: #131347;
 
   letter-spacing: 0.015em;
 
@@ -4435,7 +4437,7 @@ font-size: 75px;
 
   font-size: 17px;
 
-  color: #26262d;
+  color: #131347;
 
   line-height: 1.882;
 
@@ -4852,7 +4854,7 @@ background-color: transparent !important;
 
   font-weight: 100;
 
-  color: #26262d;
+  color: #131347;
 
 }
 
@@ -4930,7 +4932,7 @@ background-color: transparent !important;
 
   font-weight: 100;
 
-  color: #26262d;
+  color: #131347;
 
   line-height: 1.529;
 
@@ -5066,7 +5068,7 @@ background-color: transparent !important;
 
   font-weight: 200;
 
-  color: #26262d;
+  color: #131347;
 
 }
 
@@ -5240,7 +5242,7 @@ background-color: transparent !important;
 
   font-size: 60px;
 
-  color: #26262d;
+  color: #131347;
 
   font-weight: 100;
 
@@ -5276,9 +5278,9 @@ background-color: transparent !important;
 
   font-size: 13px;
 
-  color: #26262d;
+  color: #131347;
 
-  border-bottom: 1px solid #26262d;
+  border-bottom: 1px solid #131347;
 
   position: relative;
 
@@ -5378,7 +5380,7 @@ background-color: transparent !important;
 
   font-weight: 100;
 
-  color: #26262d;
+  color: #131347;
 
   text-align: left;
 
@@ -5396,7 +5398,7 @@ background-color: transparent !important;
 
     font-weight: 200;
 
-    color: #26262d;
+    color: #131347;
 
     line-height: 1.2;
 	text-align: center;
@@ -5525,7 +5527,7 @@ background-color: transparent !important;
 
   font-family: 'Prompt', sans-serif;
 
-  color: #26262d;
+  color: #131347;
 
   text-transform: uppercase;
 
@@ -5535,7 +5537,7 @@ background-color: transparent !important;
 
 .contacts .info .col ul li .underline::after {
 
-  background: #26262d;
+  background: #131347;
 
 }
 
@@ -5869,7 +5871,7 @@ background-color: transparent !important;
 
   font-family: 'Prompt', sans-serif;
 
-  color: #26262d;
+  color: #131347;
 
   letter-spacing: 0.015em;
 
@@ -5919,7 +5921,7 @@ background-color: transparent !important;
 
   letter-spacing: 0.05em;
 
-  color: #26262d;
+  color: #131347;
 
 }
 
@@ -5933,7 +5935,7 @@ background-color: transparent !important;
 
   left: 0;
 
-  background: #26262d;
+  background: #131347;
 
   height: 1px;
 
@@ -6057,7 +6059,7 @@ background-color: transparent !important;
 
   font-weight: 100;
 
-  color: #26262d;
+  color: #131347;
 
 }
 
@@ -6071,7 +6073,7 @@ background-color: transparent !important;
 
   font-size: 202px;
 
-  color: #f2f2f2;
+  color: #b1d0f3;
 
   font-weight: 100;
 
@@ -6197,7 +6199,7 @@ background-color: transparent !important;
 
   padding-bottom: 200px;
 
-  color: #26262d;
+  color: #131347;
 
 }
 
@@ -6271,7 +6273,7 @@ background-color: transparent !important;
 
   font-weight: 100;
 
-  color: #26262d;
+  color: #131347;
 
 }
 
@@ -6417,7 +6419,7 @@ background-color: transparent !important;
 
     /* padding-top: 200px; */
 
-    color: #26262d;
+    color: #131347;
 
 }
 
@@ -6515,7 +6517,7 @@ background-color: transparent !important;
 
   font-weight: 200;
 
-  color: #26262d;
+  color: #131347;
 
 }
 
@@ -6551,7 +6553,7 @@ background-color: transparent !important;
 
   transform-origin: 50% 50%;
 
-  background: #26262d;
+  background: #131347;
 
 }
 
@@ -6721,7 +6723,7 @@ background-color: transparent !important;
 
   position: absolute;
 
-  background: #26262d;
+  background: #131347;
 
 }
 
@@ -6781,7 +6783,7 @@ background-color: transparent !important;
 
 .gallery {
 
-  background: #26262d;
+  background: #131347;
 
   display: none;
 
@@ -10832,7 +10834,7 @@ span.name img {
 
   .gallery {
 
-    background: #26262d;
+    background: #131347;
 
   }
 
@@ -11986,7 +11988,7 @@ span.name img {
 
   .part .part2 {
 
-    background: #26262d;
+    background: #131347;
 
     opacity: 1;
 
@@ -13436,7 +13438,7 @@ span.name img {
 }
 .blog-content{
        font-size: 17px;
-    color: #26262d;
+    color: #131347;
     font-weight: 200;
     line-height: 1.882;
     letter-spacing: 0.03em;
@@ -13466,7 +13468,7 @@ span.name img {
 .related-blog-title{
     font-size: 36px;
     font-weight: 100;
-    color: #26262d;
+    color: #131347;
     line-height: 1.529;
 }
 .carousel-indicators {
@@ -13672,7 +13674,7 @@ a#submit {
     font-weight: 400 !important;
     padding: 10px 15px !important;
     border: 1px solid #000 !important;
-    color: #26262d !important;
+    color: #131347 !important;
 }
 
 

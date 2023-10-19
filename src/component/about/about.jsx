@@ -4,8 +4,8 @@ const About = () => {
 return (
 <>
   <div className="contacts">
-    <h1 className="marquee" data-title="essence tiles">
-      essence tiles
+    <h1 className="marquee" data-title="Ocean Ceramica">
+    Ocean Ceramica
     </h1>
     <div className="top">
       <form>

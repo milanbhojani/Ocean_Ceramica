@@ -16,7 +16,7 @@ const Footer = () => {
                <li>
                  <i className="fa fa-instagram fsi" aria-hidden="true" />{" "}
                  <a
-                   href="https://www.instagram.com/essencetiles/"
+                   href="https://www.instagram.com/ocean_ceramica/"
                    target="_blank"
                    className="underline"
                  >
@@ -26,7 +26,7 @@ const Footer = () => {
                <li>
                  <i className="fa fa-facebook-official fsi" aria-hidden="true" />{" "}
                  <a
-                   href="https://www.facebook.com/essencetiles"
+                   href="https://www.facebook.com/profile.php?id=100068731177080"
                    target="_blank"
                    className="underline"
                  >
@@ -36,7 +36,7 @@ const Footer = () => {
                <li>
                  <i className="fa fa-linkedin-square fsi" aria-hidden="true" />{" "}
                  <a
-                   href="https://www.linkedin.com/company/essence-buildware-pvt-ltd"
+                   href="https://www.linkedin.com/company/oceanceramica"
                    target="_blank"
                    className="underline"
                  >
@@ -57,15 +57,14 @@ const Footer = () => {
                    target="_blank"
                    className="underline"
                  >
-                   <b>Essence Tiles</b>
+                   <b>Ocean Ceramica</b>
                    <br />
-                   CH-8 Eden Ceramic City,
-                   <br /> Opp: Honest Hotel,
+                   C/O 3rd floor,
+                   <br />  T-41, Somnath Market,
                    <br />
-                   Near Omkar Petroleum,
+                   opposite Ratnakala Diamond,
                    <br />
-                   8-A, National Highway, Lalpar, <br /> Morbi- 363 642, (Guj.)
-                   INDIA.
+                   Sanala Road - 363641, Gujarat, INDIA. 
                  </a>
                </li>
              </ul>
@@ -77,7 +76,7 @@ const Footer = () => {
              <ul>
                <li>
                  <a href="mailto:info@essencetiles.com" className="underline">
-                   info@essencetiles.com
+                 info@oceanceramica.com
                  </a>
                </li>
              </ul>
@@ -90,7 +89,7 @@ const Footer = () => {
              <ul>
                <li>
                  <a href="tel:+918980077077" className="underline">
-                   +91 97519 46677
+                   +91 72020 99299
                  </a>
                </li>
              </ul>
@@ -99,7 +98,7 @@ const Footer = () => {
          <div className="bottom">
            <span className="left">
              {" "}
-             2022 Essence Tiles. All rights reserved by Essence Buildware Private
+             2023 Ocean Ceramica. All rights reserved by Ocean Ceramica
              Limited.{" "}
            </span>
            {/*<div class="line"></div>*/}

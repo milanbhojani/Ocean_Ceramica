@@ -5,8 +5,8 @@ const Export = () => {
      <>
      <div className="contacts">
         <div className="container-full">
-          <h1 className="marquee" data-title="essence tiles">
-            essence tiles
+          <h1 className="marquee" data-title="Ocean Ceramica">
+          Ocean Ceramica
           </h1>
           <div className="top">
             <form action="#">
@@ -71,7 +71,7 @@ const Export = () => {
                         <a href="dubai.html">The Big 5 - Dubai</a>
                       </h3>
                       <div className="text">
-                        Essence tiles participated in the biggest construction and
+                        Ocean Ceramica participated in the biggest construction and
                         material exhibition in the world, <br />
                         <br />
                       </div>

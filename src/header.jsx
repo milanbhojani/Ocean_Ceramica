@@ -23,7 +23,7 @@ const Header = () => {
            className="burger"
          />
          <a href="index-2.html" className="logo">
-           <img src="img/logo.svg" />
+           <img src="img/ocean.svg" />
          </a>
          <Link to="/collection" className="underline">
            Collection

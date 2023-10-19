@@ -1,5 +1,5 @@
-import React from'react';
-import { Routes, Route } from "react-router-dom";
+import React, { useEffect } from'react';
+import { Routes, Route,useNavigate } from "react-router-dom";
 import Home from './component/home';
 import Contact from './component/contact/contact';
 import About from './component/about/about';
@@ -9,11 +9,26 @@ import Collection from './collection';
 import Catalogues from './component/download/catalogues';
 import Quality from './component/quality/quality';
 import Export from './component/events/export';
+import LocomotiveScroll from 'locomotive-scroll';
 
 const Main = () => {
+
+  let history = useNavigate();
+
+useEffect(() => {
+  const scroll = new LocomotiveScroll();
+  console.log("scroll outside if condition",scroll);
+  if(scroll)
+  {
+    console.log("scroll inside if condition");
+    scroll.update();
+  }
+  
+},[history])
+
 return (
    <>
-   <div data-scroll-container="" className="wrapper">
+   <div data-scroll-container className="wrapper">
     <Header />
     
         <Routes>

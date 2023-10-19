@@ -29,7 +29,7 @@ return (
             <div className="content pt-4">
               <p>
                 <a href="https://goo.gl/maps/naZWp5CLm91jTE9F7" target="_blank">
-                  <b>ESSENCE TILES</b>
+                  <b>Ocean Ceramica</b>
                   <br />
                   <br />
                   CH-8 EDEN CERAMIC CITY,

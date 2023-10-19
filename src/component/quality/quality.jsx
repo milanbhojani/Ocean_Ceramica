@@ -7,8 +7,8 @@ const Quality = () => {
 <>
   <div className="contacts">
     <div className="container-full">
-      <h1 className="marquee" data-title="essence tiles">
-        essence tiles
+      <h1 className="marquee" data-title="Ocean Ceramica">
+      Ocean Ceramica
       </h1>
       <div className="top">
         <form>
@@ -125,7 +125,7 @@ const Quality = () => {
                 items before they are distributed to buyers.
               </p>
               <p>
-                Essence Tiles guarantees that the finished product meets the
+                Ocean Ceramica guarantees that the finished product meets the
                 buyer's standards and is of high quality. It is performed on the
                 final batch of products in accordance with standard Acceptable
                 Quality Limits (AQL) criteria and comprises a thorough
