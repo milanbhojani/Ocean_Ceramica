@@ -22,9 +22,9 @@ const Header = () => {
            data-scroll-target=".wrapper"
            className="burger"
          />
-         <a href="index-2.html" className="logo">
+         <Link to="/" className="logo">
            <img src="img/ocean.svg" />
-         </a>
+         </Link>
          <Link to="/collection" className="underline">
            Collection
          </Link>
@@ -45,13 +45,17 @@ const Header = () => {
            <Link to="/About" >About Us</Link>
            </li>
            <li>
-             <Link to="/catalogues">Download</Link>
+             <Link to="/export">Infrastructure</Link>
+           </li>
+           {/* Added https://alstonia.in/infrastructure.html this part with our design */}
+           <li>
+             <Link to="/catalogues">Catalogues</Link>
            </li>
            <li>
              <Link to="/quality">Quality</Link>
            </li>
            <li>
-             <Link to="/export">Events</Link>
+             <Link to="/export">Export</Link>
            </li>
            {/* <li>
              <Link to="/career">Career</Link>

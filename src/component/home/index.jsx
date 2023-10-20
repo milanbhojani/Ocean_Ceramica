@@ -1,5 +1,5 @@
 import React from'react';
-import video from './tiles.mp4';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -429,9 +429,9 @@ Ocean Ceramica consistently captivates the market with its enchanting creations,
                 <span className="opisanie">
                 We actively engage in exhibitions and events to connect with individuals face-to-face, showcasing our offerings. This unique opportunity allows attendees to experience our products directly, comprehending their advantages firsthand. Moreover, our presence at these events enables us to promote our brand widely, extending our outreach to a broader audience.
                 </span>
-                <a href="events.html" className="a">
+                <Link to="/" className="a">
                   Learn more
-                </a>
+                </Link>
                 <br />
                 <br />
               </div>

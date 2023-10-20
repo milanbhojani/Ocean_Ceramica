@@ -1,24 +1,46 @@
-import React from'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const catalogues =()=> {
+const Catalogues =()=> {
+
+ 
+    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await fetch('https://jimpform.backendless.app/api/data/category');
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const result = await response.json();
+          console.log(result);
+          setData(result); // Update the state with the fetched data
+        } catch (error) {
+          setError(error); // Update the state in case of an error
+        } finally {
+          setLoading(false); // Set loading to false, indicating that the data has been fetched
+        }
+      }
+      fetchData();
+      },[]);
+
     return (
   <>
 <div className="contacts head-padding">
   <div className="container-full">
-    <h1
-      className="marquee"
-      data-title="catalogue"
-      style={{ color: "#7c7b7f36 !important" }}
-    >
-      catalogue
+  <h1 className="marquee" data-title="Catalogues">
+      Catalogues
     </h1>
     <div className="top">
-      <form action="#">
+      <form>
         <div className="heading">
-          <div>
-            <span style={{ color: "#fff" }}>Catalogues</span>
-          </div>
+          <div className="split">Catalogues</div>
+          {/* <div class="split"></div> */}
         </div>
+       
       </form>
     </div>
   </div>
@@ -27,95 +49,30 @@ const catalogues =()=> {
     style={{ paddingBottom: "0 !important" }}
   >
     <div className="row">
-      <div className="col-xl-3 col-lg-4 col-md-6">
+      {data && data.map((item)=>{
+        return(
+        <>
+         <div className="col-xl-3 col-lg-4 col-md-6">
         <div className="cat-img">
-          <a href="wall-tiles.html">
-            <img src="img/wall-tiles.jpg" />
-          </a>
+          <Link to="/"> 
+          {/* link redirect on single page */}
+            <img src={item.image} className="rounded " alt="" />
+          </Link>
         </div>
         <div className="cat-title">
-          <h3>WALL TILES</h3>
-          <a href="wall-tiles.html">View all</a>
+          <h3>{item.name}</h3>
+          <Link to={"/brouchers/"+item.objectId}>View all</Link>
         </div>
       </div>
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="cat-img">
-          <a href="gvt-pgvt.php">
-            <img src="img/gvt-pgvt.jpg" />
-          </a>
-        </div>
-        <div className="cat-title">
-          <h3>GVT/PGVT</h3>
-          <a href="gvt-pgvt.php">View all</a>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="cat-img">
-          <a href="porcelain.php">
-            <img src="img/porcelain-tiles.jpg" />
-          </a>
-        </div>
-        <div className="cat-title">
-          <h3>PORCELAIN TILES</h3>
-          <a href="porcelain.php">View all</a>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="cat-img">
-          <a href="full-body-vitrified-tiles.html">
-            <img src="img/fullbody-vitrified-tiles.jpg" />
-          </a>
-        </div>
-        <div className="cat-title">
-          <h3>FULLBODY VITRIFIED TILES</h3>
-          <a href="full-body-vitrified-tiles.html">View all</a>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="cat-img">
-          <a href="parking-tiles.html">
-            <img src="img/parking-tiles.jpg" />
-          </a>
-        </div>
-        <div className="cat-title">
-          <h3>PARKING TILES</h3>
-          <a href="parking-tiles.html">View all</a>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="cat-img">
-          <a href="step-risers.html">
-            <img src="img/step-risers.jpg" />
-          </a>
-        </div>
-        <div className="cat-title">
-          <h3>STEP RISERS TILES</h3>
-          <a href="step-risers.html">View all</a>
-        </div>
-      </div>
-      <div className="col-xl-3 col-lg-4 col-md-6">
-        <div className="cat-img">
-          <a href="double-charge.html">
-            <img src="img/double-charged-vitrified-tiles.jpg" />
-          </a>
-        </div>
-        <div className="cat-title">
-          <h3>DOUBLE CHARGED VITRIFIED TILES</h3>
-          <a href="double-charge.html">View all</a>
-        </div>
-      </div>
-      {/*<div class="col-xl-3 col-lg-4 col-md-6">*/}
-      {/*    <div class="cat-img">*/}
-      {/*        <a href="pallet.php">*/}
-      {/*            <img src="img/catalogue-mockup.jpg">*/}
-      {/*        </a>*/}
-      {/*    </div>*/}
-      {/*    <div class="cat-title">*/}
-      {/*        <h3> PALLET PACKAGING</h3>*/}
-      {/*        <a href="pallet.php">View all</a>*/}
-      {/*    </div>*/}
-      {/*</div>*/}
+        
+        </>)
+      }
+      )
+      }
+     
+      
     </div>
+
   </div>
 </div>
 
@@ -124,4 +81,4 @@ const catalogues =()=> {
     )
 }
 
-export default catalogues;
+export default Catalogues;

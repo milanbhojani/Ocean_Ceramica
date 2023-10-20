@@ -505,7 +505,7 @@
   
 }
 .cat-title h3 {
-  color: #fff;
+  color: #131347;
   text-align: center;
   font-size: 15px;
   font-weight: 400;
@@ -1182,7 +1182,7 @@ img.event {
   text-align: left;
 }
 .container.catalogue-cantainer {
-  background: rgb(38, 38, 45);
+  background: white;
   margin-top: 172px;
   opacity: 1;
   padding-top: 0;
@@ -1209,7 +1209,7 @@ span.point {
     letter-spacing: 0.05em;
 }
 .contacts.head-padding {
-  background-color: #131347;
+  background-color: white;
   margin-top: 1% !important;
 }
 
@@ -1266,7 +1266,7 @@ p.my-list-heading::after {
 
   line-height: 1;
 
-  color: #000;
+  color: #131347;
 
   border: 0;
 
@@ -2321,7 +2321,7 @@ input[type="checkbox"] {
 
   z-index: 999;
 
-  background: #000;
+  background: #131347;
 
   min-height: 100vh;
 
@@ -2484,7 +2484,7 @@ input[type="checkbox"] {
   width: 35px;
 
   height: 35px;
-    /*background-color: #000;*/
+    background-color: #fff;
   z-index: 1000;
 
   top: 35%;

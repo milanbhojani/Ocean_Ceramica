@@ -94,13 +94,14 @@ const Footer = () => {
                </li>
              </ul>
            </div>
+           
          </div>
          <div className="bottom">
-           <span className="left">
+           {/* <span className="left">
              {" "}
              2023 Ocean Ceramica. All rights reserved by Ocean Ceramica
              Limited.{" "}
-           </span>
+           </span> */}
            {/*<div class="line"></div>*/}
            <span className="right" style={{ float: "right" }}>
              <span>

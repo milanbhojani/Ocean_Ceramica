@@ -10,6 +10,7 @@ import Catalogues from './component/download/catalogues';
 import Quality from './component/quality/quality';
 import Export from './component/events/export';
 import LocomotiveScroll from 'locomotive-scroll';
+import ListCatalogues from './component/download/listCatalouge';
 
 const Main = () => {
 
@@ -40,6 +41,7 @@ return (
             <Route path="/catalogues" element={<Catalogues />} />
             <Route path="/quality" element={<Quality />} />
             <Route path="/export" element={<Export />} />
+            <Route path="/brouchers/:id" element={<ListCatalogues />} />
           
         </Routes>
      
