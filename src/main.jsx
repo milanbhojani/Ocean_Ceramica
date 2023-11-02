@@ -12,6 +12,7 @@ import Export from "./component/events/export";
 import LocomotiveScroll from "locomotive-scroll";
 import ListCatalogues from "./component/download/listCatalouge";
 import Infra from "./component/infrastructure/infra";
+import Subcollection from "./component/collection/subcollection";
 
 const Main = () => {
   let history = useNavigate();
@@ -40,10 +41,13 @@ const Main = () => {
           <Route path="/catalogues" element={<Catalogues />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/export" element={<Export />} />
+          
           <Route
             path="/brouchers/:id/:collection"
             element={<ListCatalogues />}
           />
+          <Route path="/subcollection" element={<Subcollection />} />
+
           <Route path="/infra" element={<Infra />} />
         </Routes>
 
