@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -26,316 +25,261 @@
     -->
     <title>React App</title>
 
-  
+    <meta charset="UTF-8" />
 
-      <meta charset="UTF-8">
-  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-      <meta name="facebook-domain-verification" content="ehi3hva6octpqql28cxu0jk9iv0xol" />
-  
-      <title>Ocean Ceramica : Wall Tiles | Vitrified Tiles | Marble Tile | Full Body | Wooden Strip</title>
-  
-  
-  
-      <!-- favicon -->
-  
-      <link rel="shortcut icon" href="%PUBLIC_URL%/img/icn.png">
-  
-  
-  
-      <meta name="msapplication-TileColor" content="#000">
-  
-  
-  
-      <meta name="theme-color" content="#fcfbfa">
-  
-  
-  
-      <!-- fonts -->
-  
-      <link rel="preconnect" href="https://fonts.googleapis.com/">
-  
-      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  
-      <!-- <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;500;800&amp;display=swap" rel="stylesheet"> -->
-      <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia:wght@100;200;300;500;800&amp;display=swap">
-  
-      <!-- styles -->
-  
-      <link rel="stylesheet" href="%PUBLIC_URL%/css/libs/locomotive-scroll.css">
-  
-      <link rel="stylesheet" href="%PUBLIC_URL%/css/libs/swiper.min.css">
-  
-      <link rel="stylesheet" href="%PUBLIC_URL%/css/libs/nice-select.css">
-  
-      <link rel="stylesheet" href="%PUBLIC_URL%/css/styles.css">
-  
-      <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css">
-      <link href="%PUBLIC_URL%/css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <!-- scripts -->
-      <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
-      
-      
-      
-      <script src="%PUBLIC_URL%/js/libs/jquery-3.5.1.min.js"></script>
-  
-      <script src="%PUBLIC_URL%/js/libs/locomotive-scroll.min.js"></script>
-  
-      <script src="%PUBLIC_URL%/js/libs/gsap.min.js"></script>
-  
-      <script src="%PUBLIC_URL%/js/libs/ScrollTrigger.min.js"></script>
-  
-      <script src="%PUBLIC_URL%/js/libs/splittext.min.js"></script>
-         <!--<link href="css/bootstrap.css" rel="stylesheet">-->
-      <link rel="stylesheet" href="%PUBLIC_URL%/css/lightbox.css">
-      <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W8W5W65RH7"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-W8W5W65RH7');
-  </script>
-      
-      
-  
-      <!-- Meta Pixel Code -->
-  
-      <script>
-  
-          !function (f, b, e, v, n, t, s) {
-              if (f.fbq) return; n = f.fbq = function () {
-                  n.callMethod ?
-  
-                  n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-              };
-  
-              if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-  
-              n.queue = []; t = b.createElement(e); t.async = !0;
-  
-              t.src = v; s = b.getElementsByTagName(e)[0];
-  
-              s.parentNode.insertBefore(t, s)
-          }(window, document, 'script',
-  
-              '../connect.facebook.net/en_US/fbevents.js');
-  
-          fbq('init', '757749795393709');
-  
-          fbq('track', 'PageView');
-  
-      </script>
-  
-  
-      <noscript>
-  
-          <img height="1" width="1" style="display:none;"
-              src="https://www.facebook.com/tr?id=757749795393709&amp;ev=PageView&amp;noscript=1" />
-  
-      </noscript>
-  
-      <!-- End Meta Pixel Code -->
-      <script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        $('.accordion__header').click(function (e) {
-  
-            e.preventDefault();
-  
-            var currentIsActive = $(this).hasClass('is-active');
-  
-            $(this).parent('.accordion').find('> *').removeClass('is-active');
-  
-            if (currentIsActive != 1) {
-  
-                $(this).addClass('is-active');
-  
-                $(this).next('.accordion__body').addClass('is-active');
-  
-            }
-  
-        });
-  
-    </script>
-    
+    <title>
+      Ocean Ceramica : Wall Tiles | Vitrified Tiles | Marble Tile | Full Body |
+      Wooden Strip
+    </title>
+
+    <!-- favicon -->
+
+    <link rel="shortcut icon" href="%PUBLIC_URL%/img/icn.png" />
+
+    <meta name="msapplication-TileColor" content="#000" />
+
+    <meta name="theme-color" content="#fcfbfa" />
+
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia:wght@100;200;300;500;800&amp;display=swap"
+    />
+
+    <!-- styles -->
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/libs/locomotive-scroll.css" />
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/libs/swiper.min.css" />
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/libs/nice-select.css" />
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/styles.css" />
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/main.css" />
+    <link href="%PUBLIC_URL%/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- scripts -->
+    <link
+      rel="stylesheet"
+      href="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+    />
+
+    <script src="%PUBLIC_URL%/js/libs/jquery-3.5.1.min.js"></script>
+
+    <script src="%PUBLIC_URL%/js/libs/locomotive-scroll.min.js"></script>
+
+    <script src="%PUBLIC_URL%/js/libs/gsap.min.js"></script>
+
+    <script src="%PUBLIC_URL%/js/libs/ScrollTrigger.min.js"></script>
+
+    <script src="%PUBLIC_URL%/js/libs/splittext.min.js"></script>
+    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/lightbox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google tag (gtag.js) -->
+
+    <!-- Meta Pixel Code -->
+
+    <!-- End Meta Pixel Code -->
     <script>
-        (function($) {
-    $.fn.cascadeSlider = function(opt) {
-        var $this = this,
-            itemClass = opt.itemClass || 'cascade-slider_item',
-            arrowClass = opt.arrowClass || 'cascade-slider_arrow',
-            $item = $this.find('.' + itemClass),
-            $arrow = $this.find('.' + arrowClass),
-            itemCount = $item.length;
-        items = opt.itemCount;
-  
-        // Additional option for autoplay
-        autoplayDelay = opt.delay;
-        if (autoplayDelay == null || autoplayDelay == 0) {
-            autoplayDelay = 3;
+      $(".accordion__header").click(function (e) {
+        e.preventDefault();
+
+        var currentIsActive = $(this).hasClass("is-active");
+
+        $(this).parent(".accordion").find("> *").removeClass("is-active");
+
+        if (currentIsActive != 1) {
+          $(this).addClass("is-active");
+
+          $(this).next(".accordion__body").addClass("is-active");
         }
-        pohClass = '.cascade-slider_item, .cascade-slider_arrow, .cascade-slider_dot';
-        if (opt.autoplay == true) {
+      });
+    </script>
+
+    <script>
+      (function ($) {
+        $.fn.cascadeSlider = function (opt) {
+          var $this = this,
+            itemClass = opt.itemClass || "cascade-slider_item",
+            arrowClass = opt.arrowClass || "cascade-slider_arrow",
+            $item = $this.find("." + itemClass),
+            $arrow = $this.find("." + arrowClass),
+            itemCount = $item.length;
+          items = opt.itemCount;
+
+          // Additional option for autoplay
+          autoplayDelay = opt.delay;
+          if (autoplayDelay == null || autoplayDelay == 0) {
+            autoplayDelay = 3;
+          }
+          pohClass =
+            ".cascade-slider_item, .cascade-slider_arrow, .cascade-slider_dot";
+          if (opt.autoplay == true) {
             autoPlay();
             if (opt.pauseOnHover == true) {
-                $this.find(pohClass).on('mouseenter', function() {
-                    clearInterval(effectInterval);
-                }).on('mouseleave', function() {
-                    autoPlay();
+              $this
+                .find(pohClass)
+                .on("mouseenter", function () {
+                  clearInterval(effectInterval);
                 })
+                .on("mouseleave", function () {
+                  autoPlay();
+                });
             }
-        }
-  
-        function autoPlay() {
-            effectInterval = setInterval(function() {
-                var action = 'next',
-                    nowIndex = $item.index($this.find('.now'));
-  
-                if (action == 'next') {
-                    if (nowIndex == itemCount - 1) {
-                        changeIndex(0);
-                    } else {
-                        changeIndex(nowIndex + 1);
-                    }
-                } else if (action == 'prev') {
-                    if (nowIndex == 0) {
-                        changeIndex(itemCount - 1);
-                    } else {
-                        changeIndex(nowIndex - 1);
-                    }
-                }
-                var slideCount = $('.cascade-slider_item.now').attr('data-slide-number');
-                $('.cascade-slider_dot').removeClass('cur');
-                $('.cascade-slider_dot').eq(slideCount).addClass('cur');
-            }, autoplayDelay * 1000);
-        }
-        // END of Additional option for autoplay
-  
-        var defaultIndex = 0;
-  
-        changeIndex(defaultIndex);
-  
-        $arrow.on('click', function() {
-            var action = $(this).data('action'),
-                nowIndex = $item.index($this.find('.now'));
-  
-            if (action == 'next') {
+          }
+
+          function autoPlay() {
+            effectInterval = setInterval(function () {
+              var action = "next",
+                nowIndex = $item.index($this.find(".now"));
+
+              if (action == "next") {
                 if (nowIndex == itemCount - 1) {
-                    changeIndex(0);
+                  changeIndex(0);
                 } else {
-                    changeIndex(nowIndex + 1);
+                  changeIndex(nowIndex + 1);
                 }
-            } else if (action == 'prev') {
+              } else if (action == "prev") {
                 if (nowIndex == 0) {
-                    changeIndex(itemCount - 1);
+                  changeIndex(itemCount - 1);
                 } else {
-                    changeIndex(nowIndex - 1);
+                  changeIndex(nowIndex - 1);
                 }
+              }
+              var slideCount = $(".cascade-slider_item.now").attr(
+                "data-slide-number"
+              );
+              $(".cascade-slider_dot").removeClass("cur");
+              $(".cascade-slider_dot").eq(slideCount).addClass("cur");
+            }, autoplayDelay * 1000);
+          }
+          // END of Additional option for autoplay
+
+          var defaultIndex = 0;
+
+          changeIndex(defaultIndex);
+
+          $arrow.on("click", function () {
+            var action = $(this).data("action"),
+              nowIndex = $item.index($this.find(".now"));
+
+            if (action == "next") {
+              if (nowIndex == itemCount - 1) {
+                changeIndex(0);
+              } else {
+                changeIndex(nowIndex + 1);
+              }
+            } else if (action == "prev") {
+              if (nowIndex == 0) {
+                changeIndex(itemCount - 1);
+              } else {
+                changeIndex(nowIndex - 1);
+              }
             }
-            var slideCount = $('.cascade-slider_item.now').attr('data-slide-number');
-            $('.cascade-slider_dot').removeClass('cur');
-            $('.cascade-slider_dot').eq(slideCount).addClass('cur');
-  
-        });
-  
-        // add data attributes
-        for (var i = 0; i < itemCount; i++) {
-            $('.cascade-slider_item').each(function(i) {
-                $(this).attr('data-slide-number', [i]);
+            var slideCount = $(".cascade-slider_item.now").attr(
+              "data-slide-number"
+            );
+            $(".cascade-slider_dot").removeClass("cur");
+            $(".cascade-slider_dot").eq(slideCount).addClass("cur");
+          });
+
+          // add data attributes
+          for (var i = 0; i < itemCount; i++) {
+            $(".cascade-slider_item").each(function (i) {
+              $(this).attr("data-slide-number", [i]);
             });
-        }
-  
-        // dots
-        $('.cascade-slider_dot').bind('click', function() {
+          }
+
+          // dots
+          $(".cascade-slider_dot").bind("click", function () {
             // add class to current dot on click
-            $('.cascade-slider_dot').removeClass('cur');
-            $(this).addClass('cur');
-  
+            $(".cascade-slider_dot").removeClass("cur");
+            $(this).addClass("cur");
+
             var index = $(this).index();
-  
-            $('.cascade-slider_item').removeClass('now prev next');
-            var slide = $('.cascade-slider_slides').find('[data-slide-number=' + index + ']');
-            slide.prev().addClass('prev');
-            slide.addClass('now');
-            slide.next().addClass('next');
-  
+
+            $(".cascade-slider_item").removeClass("now prev next");
+            var slide = $(".cascade-slider_slides").find(
+              "[data-slide-number=" + index + "]"
+            );
+            slide.prev().addClass("prev");
+            slide.addClass("now");
+            slide.next().addClass("next");
+
             if (slide.next().length == 0) {
-                $('.cascade-slider_item:first-child').addClass('next');
+              $(".cascade-slider_item:first-child").addClass("next");
             }
-  
+
             if (slide.prev().length == 0) {
-                $('.cascade-slider_item:last-child').addClass('prev');
+              $(".cascade-slider_item:last-child").addClass("prev");
             }
-        });
-  
-        function changeIndex(nowIndex) {
+          });
+
+          function changeIndex(nowIndex) {
             // clern all class
-            $this.find('.now').removeClass('now');
-            $this.find('.next').removeClass('next');
-            $this.find('.prev').removeClass('prev');
-  
+            $this.find(".now").removeClass("now");
+            $this.find(".next").removeClass("next");
+            $this.find(".prev").removeClass("prev");
+
             if (nowIndex == itemCount - 1) {
-                $item.eq(0).addClass('next');
+              $item.eq(0).addClass("next");
             }
             if (nowIndex == 0) {
-                $item.eq(itemCount - 1).addClass('prev');
+              $item.eq(itemCount - 1).addClass("prev");
             }
-  
-            $item.each(function(index) {
-                if (index == nowIndex) {
-                    $item.eq(index).addClass('now');
-                }
-                if (index == nowIndex + 1) {
-                    $item.eq(index).addClass('next');
-                }
-                if (index == nowIndex - 1) {
-                    $item.eq(index).addClass('prev');
-                }
+
+            $item.each(function (index) {
+              if (index == nowIndex) {
+                $item.eq(index).addClass("now");
+              }
+              if (index == nowIndex + 1) {
+                $item.eq(index).addClass("next");
+              }
+              if (index == nowIndex - 1) {
+                $item.eq(index).addClass("prev");
+              }
             });
-  
+
             if (items == 5) {
-                otherIndex();
+              otherIndex();
             }
-  
-        }
-  
-        function otherIndex() {
-            var slideItemsCount = $this.find('.cascade-slider_item').length - 1;
-            var nextSlide = $this.find('.next').index()
-            var prevSlide = $this.find('.prev').index()
-        }
-  
-    };
-  })(jQuery);
-  
-  
-  
-  $('#cascade-slider').cascadeSlider({
-    itemClass: 'cascade-slider_item',
-    arrowClass: 'cascade-slider_arrow',
-    autoplay: true, // additional feature - autoplay next images
-    delay: 5, // additional feature - adding delay of autoplay feature
-    pauseOnHover: true, // additional feature - will pause the autoplay function when hovering images
-    itemCount: 5 // Set 5 or 3 for total count of images to be shown
-  });
-    
+          }
+
+          function otherIndex() {
+            var slideItemsCount = $this.find(".cascade-slider_item").length - 1;
+            var nextSlide = $this.find(".next").index();
+            var prevSlide = $this.find(".prev").index();
+          }
+        };
+      })(jQuery);
+
+      $("#cascade-slider").cascadeSlider({
+        itemClass: "cascade-slider_item",
+        arrowClass: "cascade-slider_arrow",
+        autoplay: true, // additional feature - autoplay next images
+        delay: 5, // additional feature - adding delay of autoplay feature
+        pauseOnHover: true, // additional feature - will pause the autoplay function when hovering images
+        itemCount: 5, // Set 5 or 3 for total count of images to be shown
+      });
     </script>
     <!-- scripts -->
-  
+
     <script src="js/libs/swiper.js"></script>
-  
+
     <script src="js/libs/inputmask.js"></script>
-  
+
     <script src="js/libs/jquery.nice-select.min.js"></script>
-  
+
     <script src="js/main.js"></script>
-  
-  <script src="js/bootstrap.min.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -350,6 +294,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-   
   </body>
 </html>
