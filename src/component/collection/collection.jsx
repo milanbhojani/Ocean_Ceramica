@@ -67,7 +67,7 @@ const Collection = () => {
                           <div className="overlay-box">
                             <ul className="social-icons">
                               <li>
-                                <Link to="/collection">View Details</Link>
+                                <Link to="/subcollection">View Details</Link>
                               </li>
                             </ul>
                           </div>

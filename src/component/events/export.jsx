@@ -1,4 +1,6 @@
 import React from "react";
+import Flag from 'react-world-flags'
+
 
 const Export = () => {
   return (
@@ -79,148 +81,78 @@ const Export = () => {
                 <h1 class="text-center">Our Export Country</h1>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Bosnia.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Bosnia"
-                />
-                <h6 class="mt-1">Bosnia</h6>
+                
+                <Flag code={ 356 } />
+           
+                <h6 class="mt-1">India</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/France.jpg"
-                  class="img-fluid myflagimg"
-                  alt="France"
-                />
+              <Flag code={ 250 } />
                 <h6 class="mt-1">France</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Germany.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Germany"
-                />
+              <Flag code={ 276 } />
                 <h6 class="mt-1">Germany</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Greece.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Greece"
-                />
+              <Flag code={ 300 } />
                 <h6 class="mt-1">Greece</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Hungary.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Hungary"
-                />
+              <Flag code={ 348 } />
                 <h6 class="mt-1">Hungary</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Macedonia.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Macedonia"
-                />
-                <h6 class="mt-1">Macedonia</h6>
+              <Flag code={ 496 } />
+                <h6 class="mt-1">Mongolia</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Moldova.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Moldova"
-                />
-                <h6 class="mt-1">Moldova</h6>
+              <Flag code={ 504 } />
+                <h6 class="mt-1">Morocco</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Netherlands.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Netherlands"
-                />
+              <Flag code={ 528 } />
                 <h6 class="mt-1">Netherlands</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Poland.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Poland"
-                />
+              <Flag code={ 616 } />
                 <h6 class="mt-1">Poland</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Portugal.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Portugal"
-                />
+              <Flag code={ 620 } />
                 <h6 class="mt-1">Portugal</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Qatar.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Qatar"
-                />
+              <Flag code={ 634 } />
                 <h6 class="mt-1">Qatar</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Romania.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Romania"
-                />
+              <Flag code={ 642 } />
                 <h6 class="mt-1">Romania</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Serbia.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Serbia"
-                />
+              <Flag code={ 688 } />
                 <h6 class="mt-1">Serbia</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/Trinidad.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Trinidad"
-                />
+              <Flag code={ 780 } />
                 <h6 class="mt-1">Trinidad</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/United Kingdom.jpg"
-                  class="img-fluid myflagimg"
-                  alt="United Kingdom"
-                />
+              <Flag code={ 826 } />
                 <h6 class="mt-1">United Kingdom</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/United States.jpg"
-                  class="img-fluid myflagimg"
-                  alt="United States"
-                />
+              <Flag code={ 840 } />
                 <h6 class="mt-1">United States</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/United_Arab_Emirates.jpg"
-                  class="img-fluid myflagimg"
-                  alt="United Arab Emirates"
-                />
+              <Flag code={ 784 } />
                 <h6 class="mt-1">United Arab Emirates</h6>
               </div>
               <div class="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <img
-                  src="https://Ocean.in/img/exportflag/kosovo.jpg"
-                  class="img-fluid myflagimg"
-                  alt="Kosovo"
-                />
-                <h6 class="mt-1">Kosovo</h6>
+              <Flag code={ 380 } />
+                <h6 class="mt-1">Italy</h6>
               </div>
             </div>
           </div>
