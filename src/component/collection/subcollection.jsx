@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Subcollection = () => {
   return (
@@ -85,32 +86,23 @@ const Subcollection = () => {
   <br />
   <b>Warning</b>:  Trying to access array offset on value of type null in <b>/home/essencetiles.com/public_html/absolute.php</b> on line <b>179</b><br />
   " class="btn btn-secondary">30x60cm</a> */}
-                      <a
-                        href="https://essencetiles.com/sub-collection.php?collection_slug=30x60cm&collection_id=5"
-                        className="btn btn-secondary"
-                      >
+                        <Link to="/detailcollection" className="btn btn-secondary">
                         30x60cm
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       Engrave <br />
                       <br />
-                      <a
-                        href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=6"
-                        className="btn btn-secondary"
-                      >
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         60x120cm
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       Moroccon <br />
                       <br />
-                      <a
-                        href="https://essencetiles.com/sub-collection.php?collection_slug=30x30cm&collection_id=7"
-                        className="btn btn-secondary"
-                      >
+                      <Link to="/subcollection"  className="btn btn-secondary">
                         30x30cm
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -155,24 +147,15 @@ const Subcollection = () => {
                       Full body Vitrified tiles
                       <br />
                       <br />
-                      <a
-                        href="https://essencetiles.com/sub-collection.php?collection_slug=60x60cm&collection_id=10"
-                        className="btn btn-secondary"
-                      >
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         60X60cm
-                      </a>
-                      <a
-                        href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=11"
-                        className="btn btn-secondary"
-                      >
+                      </Link>
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         60X120cm
-                      </a>
-                      <a
-                        href="https://essencetiles.com/sub-collection.php?collection_slug=60x90cm&collection_id=48"
-                        className="btn btn-secondary "
-                      >
+                      </Link>
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         60x90cm
-                      </a>
+                      </Link>
                     </li>
                     {/*<li>Full body<br>Vitrified tiles<br><br>*/}
                     {/*<a href="https://drive.google.com/file/d/1BQWqWbxxnwcl7xzJjgLFNB7IKSMExURV/view?usp=sharing" class="btn btn-secondary">60x120cm</a>*/}
@@ -219,15 +202,12 @@ const Subcollection = () => {
                     <li>
                       Parking (12 mm) <br />
                       <br />
-                      <a
-                        href="https://essencetiles.com/sub-collection.php?collection_slug=40x40cm&collection_id=14"
-                        className="btn btn-secondary"
-                      >
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         40x40cm
-                      </a>
-                      <a href="#" className="btn btn-secondary">
+                      </Link>
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         30x30cm
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -267,12 +247,12 @@ const Subcollection = () => {
                     <li>
                       Fullbody (1.5cm) <br />
                       <br />
-                      <a href="#" className="btn btn-secondary">
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         80x240cm
-                      </a>
-                      <a href="#" className="btn btn-secondary">
+                      </Link>
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         80x300cm
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -312,9 +292,9 @@ const Subcollection = () => {
                       Colorbody (1.5cm)
                       <br />
                       <br />
-                      <a href="#" className="btn btn-secondary">
+                      <Link to="/detailcollection"  className="btn btn-secondary">
                         120x240cm
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
