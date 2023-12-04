@@ -13,55 +13,58 @@ const Home = () => {
             </video> */}
           <div
             id="carouselExampleControls"
-            class="carousel slide"
+            className="carousel slide"
             data-ride="carousel"
           >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
                 <img
-                  class="d-block w-100"
-                  src="img/slider_1.jpg"
+                  className="d-block w-100"
+                  src="img/a.png"
                   alt="First slide"
+                  loading="lazy"
                 />
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <img
-                  class="d-block w-100"
-                  src="img/slider_2.jpg"
+                  className="d-block w-100"
+                  src="img/b.png"
                   alt="Second slide"
+                  loading="lazy"
                 />
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <img
-                  class="d-block w-100"
-                  src="img/slider_3.jpg"
+                  className="d-block w-100"
+                  src="img/c.png"
                   alt="Third slide"
+                  loading="lazy"
                 />
               </div>
             </div>
             <a
-              class="carousel-control-prev"
+              className="carousel-control-prev"
               href="#carouselExampleControls"
               role="button"
               data-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                className="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-              <span class="sr-only">Previous</span>
+              <span className="sr-only">Previous</span>
             </a>
             <a
-              class="carousel-control-next"
+              className="carousel-control-next"
               href="#carouselExampleControls"
               role="button"
               data-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                className="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-              <span class="sr-only">Next</span>
+              <span className="sr-only">Next</span>
             </a>
           </div>
         </div>
@@ -95,73 +98,50 @@ const Home = () => {
             <Link to="/collection" className="a">
               View Collection
             </Link>
+            <br />
           </div>
         </div>
-        <div className="container-full">
-          <div className="center" data-scroll="" data-scroll-speed={4}>
-            <div className="swiper-container">
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <span>
-                    <Link to="/collection">
-                      {" "}
-                      <img
-                        src="img/COLLECTION/INTENDO COLL/pietra Intendo coll.jpg"
-                        className="img"
-                      />{" "}
-                    </Link>
-                  </span>
-                  {/*<span style="background: url('img/gr1.png') no-repeat 50%/cover;"><br>*/}
-                  {/* <span  class="pbx">elements collection</span></span> */}
-                </div>
-                <div className="swiper-slide">
-                  <span>
-                    <Link to="/collection">
-                      {" "}
-                      <img
-                        src="img/COLLECTION/PRISM COLL/NOVELLA_PRISM COLL_60X120.jpg"
-                        className="img"
-                      />{" "}
-                    </Link>
-                  </span>
-                  {/*<span style="background: url('img/gr2.png') no-repeat 50%/cover;"><br>*/}
-                  {/* <span  class="pbx">absolute collection</span></span> */}
-                </div>
-                <div className="swiper-slide">
-                  <span>
-                    <Link to="/collection">
-                      {" "}
-                      <img
-                        src="img/COLLECTION/TREAURE COLL/120X240.jpg"
-                        className="img"
-                      />{" "}
-                    </Link>{" "}
-                  </span>
-                  {/*<span style="background: url('img/gr3.png') no-repeat 50%/cover;"><br>*/}
-                  {/* <span  class="pbx">canvas collection</span></span> */}
-                </div>
-                <div className="swiper-slide">
-                  <span>
-                    <Link to="/collection">
-                      {" "}
-                      <img
-                        src="img/COLLECTION/VIVID COLL/MORGAN_VIVID_FRONT PG.jpg"
-                        className="img"
-                      />{" "}
-                    </Link>{" "}
-                  </span>
-                  {/*<span style="background: url('img/gr4.png') no-repeat 50%/cover;">*/}
-                  <br />
-                  {/* <span  class="pbx">artwork collection</span></span> */}
-                </div>
-              </div>
-              <span className="cursor3" />
-              <button className="prev" />
-              <button className="next" />
-            </div>
-            <div className="paggination">
-              <span /> / <span />
-            </div>
+
+        <div className="row">
+          <div className="col-3">
+            <Link to="/collection">
+              {" "}
+              <img
+                src="img/COLLECTION/INTENDO COLL/pietra Intendo coll.jpg"
+                className="img"
+                loading="lazy"
+              />{" "}
+            </Link>
+          </div>
+          <div className="col-3">
+            <Link to="/collection">
+              {" "}
+              <img
+                src="img/COLLECTION/PRISM COLL/NOVELLA_PRISM COLL_60X120.jpg"
+                className="img"
+                loading="lazy"
+              />{" "}
+            </Link>
+          </div>
+          <div className="col-3">
+            <Link to="/collection">
+              {" "}
+              <img
+                src="img/COLLECTION/TREAURE COLL/120X240.jpg"
+                className="img"
+                loading="lazy"
+              />{" "}
+            </Link>{" "}
+          </div>
+          <div className="col-3">
+            <Link to="/collection">
+              {" "}
+              <img
+                src="img/COLLECTION/VIVID COLL/MORGAN_VIVID_FRONT PG.jpg"
+                className="img"
+                loading="lazy"
+              />{" "}
+            </Link>{" "}
           </div>
         </div>
       </div>
@@ -181,7 +161,7 @@ const Home = () => {
             data-scroll-direction="horizontal"
             data-scroll-speed={21}
           >
-            <span></span>
+            <span>Ceramica</span>
           </div>
           <div className="flex">
             <a href="#" className="img">
@@ -493,34 +473,34 @@ Ocean Ceramica consistently captivates the market with its enchanting creations,
         </div>
       </div>
 
-      {/*<div class="contacts pt-0">*/}
-      {/*            <div class="container-full">*/}
-      {/*                <div class="top mt-0">*/}
+      {/*<div className="contacts pt-0">*/}
+      {/*            <div className="container-full">*/}
+      {/*                <div className="top mt-0">*/}
       {/*                    <form action="#">*/}
-      {/*                        <div class="heading">*/}
-      {/*                            <div class="split">Event & Exhibition</div>*/}
+      {/*                        <div className="heading">*/}
+      {/*                            <div className="split">Event & Exhibition</div>*/}
       {/*                        </div>*/}
       {/*                        <span style="margin-top: 15px; display: block; text-align: center;line-height: 1.6;">*/}
-      {/*                           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">*/}
-      {/*                              <ol class="carousel-indicators">*/}
-      {/*                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>*/}
+      {/*                           <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">*/}
+      {/*                              <ol className="carousel-indicators">*/}
+      {/*                                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>*/}
       {/*                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>*/}
       {/*                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>*/}
       {/*                              </ol>*/}
-      {/*                              <div class="carousel-inner">*/}
-      {/*                                <div class="carousel-item active" style="text-align:center;">*/}
-      {/*                                    <a  class="fancybox" data-fancybox="gallery1" href="img/event.jpg">*/}
-      {/*                                  <img class="d-block w-100" src="img/event.jpg"  alt="First slide">*/}
+      {/*                              <div className="carousel-inner">*/}
+      {/*                                <div className="carousel-item active" style="text-align:center;">*/}
+      {/*                                    <a  className="fancybox" data-fancybox="gallery1" href="img/event.jpg">*/}
+      {/*                                  <img className="d-block w-100" src="img/event.jpg"  alt="First slide">*/}
       {/*                                  </a>*/}
       {/*                                </div>*/}
-      {/*                                <div class="carousel-item"  style="text-align:center;">*/}
-      {/*                                     <a  class="fancybox" data-fancybox="gallery1" href="img/event.jpg">*/}
-      {/*                                        <img class="d-block w-100" src="img/event.jpg" alt="Second slide">*/}
+      {/*                                <div className="carousel-item"  style="text-align:center;">*/}
+      {/*                                     <a  className="fancybox" data-fancybox="gallery1" href="img/event.jpg">*/}
+      {/*                                        <img className="d-block w-100" src="img/event.jpg" alt="Second slide">*/}
       {/*                                      </a>*/}
       {/*                                </div>*/}
-      {/*                                <div class="carousel-item"  style="text-align:center;">*/}
-      {/*                                    <a  class="fancybox" data-fancybox="gallery1" href="img/event.jpg">*/}
-      {/*                                  <img class="d-block w-100" src="img/event.jpg" alt="Third slide">*/}
+      {/*                                <div className="carousel-item"  style="text-align:center;">*/}
+      {/*                                    <a  className="fancybox" data-fancybox="gallery1" href="img/event.jpg">*/}
+      {/*                                  <img className="d-block w-100" src="img/event.jpg" alt="Third slide">*/}
       {/*                                  </a>*/}
       {/*                                </div>*/}
       {/*                              </div>*/}
@@ -528,7 +508,7 @@ Ocean Ceramica consistently captivates the market with its enchanting creations,
       {/*                        <br><br>*/}
       {/*                        We attend exhibitions and events to meet people in person and show them what we have to offer. It's a great chance for<br>them to experience our products firsthand and understand their benefits. Plus, by participating in these events, we can spread the word about  <br>our brand and reach more people.*/}
       {/*                        <br>*/}
-      {/*                        <br>   <a href="events.php" class="a">Learn more</a>*/}
+      {/*                        <br>   <a href="events.php" className="a">Learn more</a>*/}
       {/*                        </span>*/}
       {/*<br><br>*/}
       {/*                    </form>*/}

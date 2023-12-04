@@ -11,7 +11,7 @@ const Collection = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://jimpform.backendless.app/api/data/collection"
+          "https://primedseashore.backendless.app/api/data/collection"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -19,6 +19,10 @@ const Collection = () => {
         const result = await response.json();
         console.log("collection", result);
         setData(result); // Update the state with the fetched data
+        let scrollerTemp = window.scroller;
+        if (scrollerTemp) {
+          scrollerTemp.update();
+        }
       } catch (error) {
         setError(error); // Update the state in case of an error
       } finally {
@@ -27,6 +31,15 @@ const Collection = () => {
     };
     fetchData();
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      let scrollerTemp = window.scroller;
+      if (scrollerTemp) {
+        scrollerTemp.update();
+      }
+    }, 500);
+  }, [data]);
 
   return (
     <>
@@ -39,7 +52,7 @@ const Collection = () => {
             <form>
               <div className="heading">
                 <div className="split"> Collection</div>
-                {/* <div class="split"></div> */}
+                {/* <div className="split"></div> */}
               </div>
               <span
                 style={{ textAlign: "center", marginTop: 15, display: "block" }}
@@ -63,22 +76,24 @@ const Collection = () => {
                     <div className="team-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
                       <div className="inner-box">
                         <div className="image">
-                          <img src={item.image} alt="" className="img-fluid" />
+                          <img src={item.Image} alt="" className="img-fluid" />
                           <div className="overlay-box">
                             <ul className="social-icons">
                               <li>
-                                <Link to="/subcollection">View Details</Link>
+                                <Link to={"/detailcollection/" + item.Name}>
+                                  View Details
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
                         <div className="lower-content">
                           <h2>
-                            <b>{item.name}</b>
+                            <b>{item.Name}</b>
                           </h2>
-                          <div className="designation">{item.description}</div>
+                          <div className="designation">{item.Description}</div>
                           <div className="designation btn-link">
-                            <Link to="/collection">View Details</Link>
+                            <Link to="/detailcollection">View Details</Link>
                           </div>
                         </div>
                       </div>

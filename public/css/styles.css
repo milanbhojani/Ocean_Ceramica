@@ -2691,7 +2691,7 @@ input[type="checkbox"] {
 
   margin-top: 50px;
     line-height: 1.3;
-    font-size: 125px;
+    font-size: 100px;
     color: #fff;
     font-weight: 100;
     border-bottom: 1px solid rgb(255 255 255 / 26%);
@@ -6074,7 +6074,7 @@ background-color: transparent !important;
 
   font-size: 202px;
 
-  color: #b1d0f3;
+  color: #f3f3f4;
 
   font-weight: 100;
 
@@ -8292,7 +8292,7 @@ span.name img {
 
     margin-top: calc(120px / 1.1);
 
-    font-size: calc(144px / 1.1);
+    font-size: calc(110px / 1.1);
 
   }
 
@@ -9247,7 +9247,7 @@ span.name img {
 
     margin-top: calc(120px / 1.2);
 
-    font-size: calc(144px / 1.2);
+    font-size: calc(110px / 1.2);
 
   }
 
@@ -11695,7 +11695,7 @@ span.name img {
 
     margin-top: 60px;
 
-    font-size: 35px;
+    font-size: 70px;
 
   }
 
@@ -13274,7 +13274,7 @@ span.name img {
 .team-block .inner-box .image{
 	position:relative;
 	overflow:hidden;
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 .team-block .inner-box .image .overlay-box{

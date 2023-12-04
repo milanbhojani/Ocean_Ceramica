@@ -12,7 +12,7 @@ const Contact = () => {
             <form>
               <div className="heading">
                 <div className="split">Visit Us</div>
-                {/* <div class="split"></div> */}
+                {/* <div className="split"></div> */}
               </div>
             </form>
           </div>

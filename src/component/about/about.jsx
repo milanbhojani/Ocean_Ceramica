@@ -11,7 +11,7 @@ const About = () => {
           <form>
             <div className="heading">
               <div className="split">All About Ocean Ceramica</div>
-              {/* <div class="split"></div> */}
+              {/* <div className="split"></div> */}
             </div>
             <span
               style={{ textAlign: "center", marginTop: 15, display: "block" }}
@@ -83,7 +83,7 @@ const About = () => {
             <div className="col">
               <div className="card">
                 <span className="year">
-                  <img src="img/o.svg" />
+                  <img src="img/O.svg" />
                   <span className="name">Outstanding Quality</span>
                 </span>
                 <span className="geo geo-img">

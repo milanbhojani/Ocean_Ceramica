@@ -14,12 +14,12 @@ const Header = () => {
             data-scroll-target=".wrapper"
             className="burger"
           />
-          <Link to="/" className="logo">
+          <a href="/" className="logo">
             <img src="img/ocean.svg" />
-          </Link>
-          <Link to="/collection" className="underline">
+          </a>
+          <a href="/collection" className="underline">
             Collection
-          </Link>
+          </a>
         </div>
       </header>
       <div
@@ -31,32 +31,32 @@ const Header = () => {
         <nav className="nav">
           <ul>
             <li>
-              <Link to="/" className="active">
+              <a href="/" className="active">
                 Home
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/About">About Us</Link>
+              <a href="/About">About Us</a>
             </li>
             <li>
-              <Link to="/infra">Infrastructure</Link>
+              <a href="/infra">Infrastructure</a>
             </li>
             {/* Added https://alstonia.in/infrastructure.html this part with our design */}
             <li>
-              <Link to="/catalogues">Catalogues</Link>
+              <a href="/catalogues">Catalogues</a>
             </li>
             <li>
-              <Link to="/quality">Quality</Link>
+              <a href="/quality">Quality</a>
             </li>
             <li>
-              <Link to="/export">Export</Link>
+              <a href="/export">Export</a>
             </li>
             {/* <li>
              <Link to="/career">Career</Link>
            </li> */}
             {/*<li><a href="blog.php">Blog</a></li>*/}
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <a href="/contact">Contact Us</a>
             </li>
           </ul>
         </nav>

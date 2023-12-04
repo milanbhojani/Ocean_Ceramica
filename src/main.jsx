@@ -14,22 +14,8 @@ import ListCatalogues from "./component/download/listCatalouge";
 import Infra from "./component/infrastructure/infra";
 import Subcollection from "./component/collection/subcollection";
 import Detailcollection from "./component/collection/detailcollection";
-import Singledetail from "./component/collection/singledetail";
 
 const Main = () => {
-  let history = useNavigate();
-
-  useEffect(() => {
-    const scroll = new LocomotiveScroll();
-    if (scroll) {
-      console.log("scroll inside if condition", window.scroller.update());
-      setTimeout(() => {
-        console.log("scroll inside if condition", window.scroller.update());
-      }, 2000);
-      scroll.update();
-    }
-  }, [history]);
-
   return (
     <>
       <div data-scroll-container className="wrapper">
@@ -43,14 +29,16 @@ const Main = () => {
           <Route path="/catalogues" element={<Catalogues />} />
           <Route path="/quality" element={<Quality />} />
           <Route path="/export" element={<Export />} />
-          
+
           <Route
             path="/brouchers/:id/:collection"
             element={<ListCatalogues />}
           />
           <Route path="/subcollection" element={<Subcollection />} />
-          <Route path="/detailcollection" element={<Detailcollection />} />
-          <Route path="/singledetail" element={<Singledetail />} />
+          <Route
+            path="/detailcollection/:collection"
+            element={<Detailcollection />}
+          />
 
           <Route path="/infra" element={<Infra />} />
         </Routes>

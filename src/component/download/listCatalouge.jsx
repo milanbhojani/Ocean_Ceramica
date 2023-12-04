@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const ListCatalogues = (props) => {
   const [data, setData] = useState(null);
+  const [categoryDetails, setCategoryDetails] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { id, collection } = useParams();
@@ -11,16 +12,23 @@ const ListCatalogues = (props) => {
       console.log("category_id", id, collection);
       try {
         const response = await fetch(
-          "https://jimpform.backendless.app/api/data/brouchers"
+          "https://primedseashore.backendless.app/api/data/catalougeDetails"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         let result = await response.json();
-
-        result = result.filter((item) => item.cat_id == id);
+        console.log("catlouge --", result);
+        if (collection == "all") {
+          result = result.filter((item) => item.Catalouge == id);
+        }
+        // else {
+        //   result = result.filter(
+        //     (item) => item.cat_id == id && item.collection == collection
+        //   );
+        // }
         setData(result); // Update the state with the fetched data
-        console.log("brouchers", result);
+        console.log("cat details", result);
       } catch (error) {
         setError(error); // Update the state in case of an error
       } finally {
@@ -30,349 +38,54 @@ const ListCatalogues = (props) => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      let scrollerTemp = window.scroller;
+      if (scrollerTemp) {
+        scrollerTemp.update();
+      }
+    }, 500);
+  }, [data]);
+
   return (
     <>
       <div className="contacts head-padding">
         <div className="container-full">
-          <h1
-            className="marquee"
-            data-title="catalogue"
-            style={{ color: "#7c7b7f36 !important" }}
-          >
+          <h1 className="marquee" data-title="catalogue">
             catalogue
           </h1>
           <div className="top">
             <form action="#">
               <div className="heading">
                 <div>
-                  <span style={{ color: "#fff" }}>WALL TILES</span>
+                  <span>Catalogue</span>
                 </div>
-                {/* <div class="split" >Collection</div> */}
+                {/* <div className="split" >Collection</div> */}
               </div>
             </form>
           </div>
         </div>
         <div className="container catalogue-cantainer">
-          <ul className=" my-ul-list">
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30X45CM Decor Color </h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_DECOR_COLOR.pdf"
-                  download="30X45CM_DECOR_COLOR.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30X45cm Fish Series</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_FISH_SERIES.pdf"
-                  download="30X45CM_FISH_SERIES.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30X45cm Glossy Elevation</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_GLOSSY_ELEVATION.pdf"
-                  download="30X45CM_GLOSSY_ELEVATION.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30X45cm Glossy vol 01</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_GLOSSY_VOL-01.pdf"
-                  download="30X45CM_GLOSSY_VOL-01.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30X45cm Glossy Vol 02</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_GLOSSY_VOL-02.pdf"
-                  download="30X45CM_GLOSSY_VOL-02.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30X45cm Glossy Vol 03</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_GLOSSY_VOL-03.pdf"
-                  download="30X45CM_GLOSSY_VOL-03.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30X45cm High Gloss</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_HIGH-GLOSS.pdf"
-                  download="30X45CM_HIGH-GLOSS.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30x45cm Kitchen</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_KITCHEN.pdf"
-                  download="30X45CM_KITCHEN.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30x45cm Matt</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_MATT.pdf"
-                  download="30X45CM_MATT.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30x45cm Matt Elevation</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_MATT_ELEVATION.pdf"
-                  download="30X45CM_MATT_ELEVATION.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30x45cm Pooja Room</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_POOJA-ROOM.pdf"
-                  download="30X45CM_POOJA-ROOM.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30x45cm Sugar Series</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_SUGAR_SERIES.pdf"
-                  download="30X45CM_SUGAR_SERIES.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30x45cm Wall tiles</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X45CM_WALL_TILE.pdf"
-                  download="30X45CM_WALL_TILE.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">
-                  30x60cm Edition Collection Brochure
-                </h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X60CM_EDITION_COLLECTION_BROCHURE.pdf"
-                  download="30X60CM_EDITION_COLLECTION_BROCHURE.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30x60cm Wall Tiles</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X60CM_WALL_TILES.pdf"
-                  download="30X60CM_WALL_TILES.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">30x60cm Exotic Surface</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/30X60CM_EXOTIC_SURFACE.pdf"
-                  download="30X60CM_EXOTIC_SURFACE.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">20x60cm Glossy Elevation</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/8x24_glossy_elevation.pdf"
-                  download="8x24_glossy_elevation.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">20x60cm Glossy</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/8x24_glossy.pdf"
-                  download="8x24_glossy.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">20x60cm Matt 1</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/8x24_matt_1.pdf"
-                  download="8x24_matt_1.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">20x60cm Matt 2</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/8x24_matt_2.pdf"
-                  download="8x24_matt_2.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <li className=" my-li-list">
-              <div className="my-list-title">
-                <h4 className="my-font crtext">20x60cm Matt Elevation</h4>
-              </div>
-              <div className="my-list-btn">
-                <a
-                  href="https://essencetiles.com/admin/uploads/pdf/8x24_matt_elevation.pdf"
-                  download="8x24_matt_elevation.pdf"
-                  target="_blank"
-                  className="btn btn-light"
-                >
-                  Download
-                </a>
-              </div>
-            </li>
-            <hr />
-          </ul>
+          <div className="row">
+            {data &&
+              data.map((item) => {
+                return (
+                  <>
+                    <div className="col-xl-3 col-lg-4 col-md-6">
+                      <div className="cat-img">
+                        <img src={item.Image} className="rounded " alt="" />
+                      </div>
+                      <div className="cat-title">
+                        <h3>{item.Name}</h3>
+                        <a href={item.DownloadLink} target="_blank">
+                          Download
+                        </a>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+          </div>
         </div>
       </div>
     </>

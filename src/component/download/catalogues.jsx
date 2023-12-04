@@ -10,13 +10,13 @@ const Catalogues = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://jimpform.backendless.app/api/data/category"
+          "https://primedseashore.backendless.app/api/data/catalouge"
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         const result = await response.json();
-        console.log(result);
+        console.log("catlouge --", result);
         setData(result); // Update the state with the fetched data
       } catch (error) {
         setError(error); // Update the state in case of an error
@@ -26,6 +26,15 @@ const Catalogues = () => {
     };
     fetchData();
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      let scrollerTemp = window.scroller;
+      if (scrollerTemp) {
+        scrollerTemp.update();
+      }
+    }, 500);
+  }, [data]);
 
   return (
     <>
@@ -38,7 +47,7 @@ const Catalogues = () => {
             <form>
               <div className="heading">
                 <div className="split">Catalogues</div>
-                {/* <div class="split"></div> */}
+                {/* <div className="split"></div> */}
               </div>
             </form>
           </div>
@@ -54,16 +63,16 @@ const Catalogues = () => {
                   <>
                     <div className="col-xl-3 col-lg-4 col-md-6">
                       <div className="cat-img">
-                        <Link to="/">
+                        <a href={"/brouchers/" + item.Name + "/all"}>
                           {/* link redirect on single page */}
-                          <img src={item.image} className="rounded " alt="" />
-                        </Link>
+                          <img src={item.Image} className="rounded " alt="" />
+                        </a>
                       </div>
                       <div className="cat-title">
-                        <h3>{item.name}</h3>
-                        <Link to={"/brouchers/" + item.objectId + "/all"}>
+                        <h3>{item.Name}</h3>
+                        <a href={"/brouchers/" + item.Name + "/all"}>
                           View all
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </>
