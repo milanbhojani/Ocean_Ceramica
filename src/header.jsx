@@ -17,6 +17,9 @@ const Header = () => {
           <a href="/" className="logo">
             <img src="img/ocean.svg" />
           </a>
+          <Link to="/collection" className="underline">
+            Collection
+          </Link>
           <a href="/collection" className="underline">
             Collection
           </a>
