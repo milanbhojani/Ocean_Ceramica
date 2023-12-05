@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      let scrollerTemp = window.scroller;
+      if (scrollerTemp) {
+        scrollerTemp.update();
+      }
+    }, 500);
+  }, []);
+
   return (
     <>
       <div className="contacts">

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      let scrollerTemp = window.scroller;
+      if (scrollerTemp) {
+        scrollerTemp.update();
+      }
+    }, 500);
+  }, []);
+
   return (
     <>
       {/* onb content */}

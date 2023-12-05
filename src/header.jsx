@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      let scrollerTemp = window.scroller;
+      if (scrollerTemp) {
+        scrollerTemp.update();
+      }
+    }, 500);
+  }, []);
+
   return (
     <>
       {/* header */}
@@ -20,9 +29,6 @@ const Header = () => {
           <Link to="/collection" className="underline">
             Collection
           </Link>
-          <a href="/collection" className="underline">
-            Collection
-          </a>
         </div>
       </header>
       <div
@@ -34,32 +40,32 @@ const Header = () => {
         <nav className="nav">
           <ul>
             <li>
-              <a href="/" className="active">
+              <Link to="/" className="active">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/About">About Us</a>
+              <Link to="/About">About Us</Link>
             </li>
             <li>
-              <a href="/infra">Infrastructure</a>
+              <Link to="/infra">Infrastructure</Link>
             </li>
             {/* Added https://alstonia.in/infrastructure.html this part with our design */}
             <li>
-              <a href="/catalogues">Catalogues</a>
+              <Link to="/catalogues">Catalogues</Link>
             </li>
             <li>
-              <a href="/quality">Quality</a>
+              <Link to="/quality">Quality</Link>
             </li>
             <li>
-              <a href="/export">Export</a>
+              <Link to="/export">Export</Link>
             </li>
             {/* <li>
              <Link to="/career">Career</Link>
            </li> */}
             {/*<li><a href="blog.php">Blog</a></li>*/}
             <li>
-              <a href="/contact">Contact Us</a>
+              <Link to="/contact">Contact Us</Link>
             </li>
           </ul>
         </nav>

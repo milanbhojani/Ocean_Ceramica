@@ -1,7 +1,58 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Flag from "react-world-flags";
 
 const Export = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      let scrollerTemp = window.scroller;
+      if (scrollerTemp) {
+        scrollerTemp.update();
+      }
+    }, 500);
+  }, []);
+
+  const [country, setCountry] = useState([
+    { Name: "Spain", Code: "ES" },
+    { Name: "Germany", Code: "DE" },
+    { Name: "Russia", Code: "RU" },
+    { Name: "Turkey", Code: "TR" },
+    { Name: "Maxico", Code: "MX" },
+    { Name: "France", Code: "FR" },
+    { Name: "greece", Code: "GR" },
+    { Name: "United Kingdom", Code: "GB" },
+    { Name: "Poland", Code: "PL" },
+    { Name: "Balarus", Code: "BY" },
+    { Name: "USA", Code: "US" },
+    { Name: "Canada", Code: "CA" },
+    { Name: "Brazil", Code: "BR" },
+    { Name: "Colombia", Code: "CO" },
+    { Name: "Peru", Code: "PE" },
+    { Name: "Venezuela", Code: "VE" },
+    { Name: "Jamica", Code: "JM" },
+    { Name: "Azarbaijan", Code: "AZ" },
+    { Name: "Cyprus", Code: "CY" },
+    { Name: "Iraq", Code: "IQ" },
+    { Name: "Jordan", Code: "JO" },
+    { Name: "Kuwait", Code: "KW" },
+    { Name: "Lebanon", Code: "LB" },
+    { Name: "UAE", Code: "AE" },
+    { Name: "Saudi Arabia", Code: "SA" },
+    { Name: "Omam", Code: "OM" },
+    { Name: "Qatar", Code: "QA" },
+    { Name: "Izrael", Code: "IL" },
+    { Name: "Belgium", Code: "BE" },
+    { Name: "guaemala", Code: "GT" },
+    { Name: "Singapore", Code: "SG" },
+    { Name: "Egypt", Code: "EG" },
+    { Name: "Vietnam", Code: "VN" },
+    { Name: "Thailand", Code: "TH" },
+    { Name: "Mauritius", Code: "MU" },
+    { Name: "papua New Guinea", Code: "PG" },
+    { Name: "Bolivia", Code: "BO" },
+    { Name: "Irlend", Code: "IE" },
+    { Name: "Romania", Code: "RO" },
+  ]);
+
   return (
     <>
       <div className="contacts">
@@ -79,79 +130,22 @@ const Export = () => {
               <div className="col-md-12 mt-5 mb-5">
                 <h1 className="text-center">Our Export Country</h1>
               </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={356} />
-
-                <h6 className="mt-1">India</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={250} />
-                <h6 className="mt-1">France</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={276} />
-                <h6 className="mt-1">Germany</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={300} />
-                <h6 className="mt-1">Greece</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={348} />
-                <h6 className="mt-1">Hungary</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={496} />
-                <h6 className="mt-1">Mongolia</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={504} />
-                <h6 className="mt-1">Morocco</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={528} />
-                <h6 className="mt-1">Netherlands</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={616} />
-                <h6 className="mt-1">Poland</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={620} />
-                <h6 className="mt-1">Portugal</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={634} />
-                <h6 className="mt-1">Qatar</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={642} />
-                <h6 className="mt-1">Romania</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={688} />
-                <h6 className="mt-1">Serbia</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={780} />
-                <h6 className="mt-1">Trinidad</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={826} />
-                <h6 className="mt-1">United Kingdom</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={840} />
-                <h6 className="mt-1">United States</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={784} />
-                <h6 className="mt-1">United Arab Emirates</h6>
-              </div>
-              <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
-                <Flag code={380} />
-                <h6 className="mt-1">Italy</h6>
-              </div>
+              {country.map((item, index) => {
+                return (
+                  <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
+                    <Flag
+                      code={item.Code}
+                      height={"100px"}
+                      width={"200px"}
+                      style={{
+                        height: "100px",
+                        width: "200px",
+                      }}
+                    />
+                    <h6 className="mt-1">{item.Name}</h6>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

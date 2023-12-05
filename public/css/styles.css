@@ -2342,7 +2342,7 @@ input[type="checkbox"] {
 .hidden-menu.active {
 
   margin-left: 0;
-  position: fixed;
+  position: fixed !important;
 
 }
 
