@@ -63,16 +63,15 @@ const Catalogues = () => {
                   <>
                     <div className="col-xl-3 col-lg-4 col-md-6">
                       <div className="cat-img">
-                        <a href={"/brouchers/" + item.Name + "/all"}>
-                          {/* link redirect on single page */}
+                        <Link to={"/brouchers/" + item.Name + "/all"}>
                           <img src={item.Image} className="rounded " alt="" />
-                        </a>
+                        </Link>
                       </div>
                       <div className="cat-title">
                         <h3>{item.Name}</h3>
-                        <a href={"/brouchers/" + item.Name + "/all"}>
+                        <Link to={"/brouchers/" + item.Name + "/all"}>
                           View all
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </>
