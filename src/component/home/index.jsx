@@ -33,6 +33,7 @@ const Home = () => {
                   alt="First slide"
                   loading="lazy"
                 />
+                
               </div>
               <div className="carousel-item">
                 <img
@@ -92,15 +93,7 @@ const Home = () => {
               className="pt-4"
               style={{ textAlign: "justify", lineHeight: "initial" }}
             >
-              From our very inception, Ocean has been a beacon of uncompromising
-              quality in the ceramic industry. We take pride in presenting our
-              exquisite range of collections that transcend the ordinary,
-              drawing inspiration from the raw and untamed beauty of nature.
-              With our products, we aim to capture the true essence of nature in
-              its purest forms, creating surfaces that are not just visually
-              stunning but also an embodiment of art and innovation in its
-              purest forms, creating surfaces that are not just visually
-              stunning, but also an embodiment of art and innovation.
+            Since our establishment, Ocean has consistently stood as a symbol of unwavering excellence within the ceramic industry. We delight in showcasing our splendid array of collections that surpass the commonplace, deriving inspiration from the unrefined and wild splendor of nature. Through our offerings, we strive to encapsulate the authentic essence of nature in its most pristine manifestations, crafting surfaces that are not only visually breathtaking but also a manifestation of artistic and innovative purity. Our commitment is to go beyond the ordinary, creating visually striking surfaces that embody the very essence of art and innovation.
             </p>
             <br />
             <br />
@@ -112,7 +105,7 @@ const Home = () => {
         </div>
 
         <div className="row">
-          <div className="col-3">
+          <div className="col-6">
             <Link to="/collection">
               {" "}
               <img
@@ -122,7 +115,7 @@ const Home = () => {
               />{" "}
             </Link>
           </div>
-          <div className="col-3">
+          <div className="col-6">
             <Link to="/collection">
               {" "}
               <img
@@ -132,7 +125,7 @@ const Home = () => {
               />{" "}
             </Link>
           </div>
-          <div className="col-3">
+          <div className="col-6">
             <Link to="/collection">
               {" "}
               <img
@@ -142,7 +135,7 @@ const Home = () => {
               />{" "}
             </Link>{" "}
           </div>
-          <div className="col-3">
+          <div className="col-6">
             <Link to="/collection">
               {" "}
               <img
@@ -378,32 +371,23 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="flex " style={{ marginTop: "-80px", marginBottom: 80 }}>
-          <a href="collection.html" className="rotate">
-            <span
-              className="bg"
-              style={{
-                background: 'url("img/more.png") no-repeat 50%/contain',
-              }}
-            />
-            <span className="burger" />
-          </a>
+        <div className="flex " style={{ marginTop: "-60px", marginBottom: 80 }}>
+         
         </div>
       </div>
       <div style={{ background: "#232323", paddingBottom: 90, paddingTop: 90 }}>
         <div className="container">
           <div className=" flex">
             <div className="accordion ">
+            <div
+                className="left"
+                style={{ width: "35%", float: "left", marginRight: "5%" }}
+              >
               <div className="accordion__header is-active">
                 <h2>Corporate Headquarters</h2>
                 <span className="accordion__toggle" />
               </div>
-
-              <div
-                className="left"
-                style={{ width: "35%", float: "left", marginRight: "5%" }}
-              >
-                <p className="ani">
+              <p className="ani">
                   <span style={{ fontWeight: 400, letterSpacing: 1 }}></span>
                   <br />A hub bustling with business-suited experts. Within
                   these walls, our team crafts wonders. Our extensive network
@@ -412,7 +396,19 @@ const Home = () => {
                   Ocean Ceramica offices are meticulously crafted to inspire and
                   foster collaboration, streamlining the process of creation.
                 </p>
+              <div className="accordion__header is-active">
+                <h2>Manufacturing units</h2>
+                <span className="accordion__toggle" />
               </div>
+
+              
+                <p className="ani">
+                  <span style={{ fontWeight: 400, letterSpacing: 1 }}></span>
+                  <br />
+Constantly astonishing the market with enchanting surprises, Essence Tiles has established fully integrated manufacturing facilities. Empowered by cutting-edge machinery, our manufacturing unit excels in producing large quantities of ceramic products while consistently meeting and exceeding all industrial quality parameters.
+                </p>
+              </div>
+              
               <div
                 className=" right"
                 style={{ width: "60%", float: "right", marginTop: "-80px" }}

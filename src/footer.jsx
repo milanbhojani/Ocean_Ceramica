@@ -137,6 +137,16 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col"></div>
+            <div className="bottom">
+  <span className="left">
+    {" "}
+    2024 Ocean Ceramica. All rights reserved by Ocean Ceramica
+    .{" "}
+  </span>
+  
+ 
+</div>
+
           </div>
         </div>
       </footer>
