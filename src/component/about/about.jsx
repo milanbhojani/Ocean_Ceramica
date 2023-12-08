@@ -19,7 +19,7 @@ const About = () => {
         <div className="top">
           <form>
             <div className="heading">
-              <div className="split">All About Ocean Ceramica</div>
+              <div className="split">We create luxurious spaces that can be lived in</div>
               {/* <div className="split"></div> */}
             </div>
             <span
@@ -34,49 +34,16 @@ const About = () => {
         <div className="container-full">
           <div className="flex">
             <h2 className="col">{/*<span>Company Profile</span>*/}</h2>
-            <p className="col">
+            <p className="col text-justify">
               <span>
                 {/*<span style="margin-bottom:12px"> <b> Essence: Unleashing the Power of Innovative Ceramic Products.</b></span><br>*/}
-                At Ocean Ceramica, we go beyond traditional tile manufacturing.
-                We are at the forefront of transforming the ceramic industry
-                with our innovative products that redefine excellence. Our core
-                mission is to eradicate existing system errors and empower our
-                channel partners with in-depth knowledge about every Essence
-                product. This ensures accurate information is delivered to end
-                users, allowing our partners to maintain a competitive edge in
-                the market.
+                "Ocean Ceramica" is a reputable company with four manufacturing units and one export house. We are producing and exporting an exclusive range of porcelain tiles and porcelain slabs. Our tiles are manufactured using top-notch raw materials and employing proven techniques. Our tiles are well-known in the marketplace for their smooth finish, appealing designs, easy-to-clean features, and durability.
+<br/>
+Ocean Ceramica is one of the most popular brands creating luxury innovations in the ceramic hub of Morbi, India. Iconic cutting-edge architectural surfaces with advanced technological characteristics. Ocean Ceramica continues to research and create new designs according to new trends and technologies. We aim to keep motivating people and create bright, vibrant settings that can be fully appreciated. 
+<br/>
+The owner, Kishan Patel has traveled the globe from Asia to Europe, America, Australia, and Latin America for more than 7 years to gain endless ideas to export building materials from India to the world. Therefore, the journey experience and working with different people have shaped him into an expert in product quality.
                 <br />
-                <br />
-                <span style={{ marginBottom: 12 }}>
-                  <b> Setting New Horizons in Ceramics</b>
-                </span>
-                <br />
-                Signifying the company's mission to push the boundaries of
-                excellence in the ceramic industry
-                <br />
-                <br />
-                <span style={{ marginBottom: 12 }}>
-                  <b>Navigating Quality, Innovation, and Style</b>
-                </span>
-                <br />
-                Emphasizing the company's commitment to delivering high-quality,
-                innovative, and stylish ceramic products.
-                <br />
-                <br />
-                <span style={{ marginBottom: 12 }}>
-                  <b>Where Expertise Meets Elegance</b>
-                </span>
-                <br />
-                Highlighting the company's expertise in ceramics and its
-                dedication to creating elegant solutions.
-                <br />
-                <br />
-                <span style={{ marginBottom: 12 }}>
-                  <b>Waves of Inspiration for Your Space</b>
-                </span>
-                <br />
-                Indicating the company's ability to provide inspirational
-                ceramic solutions for various spaces.
+             
               </span>
             </p>
             <div className="col" />

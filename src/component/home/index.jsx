@@ -15,11 +15,9 @@ const Home = () => {
     <>
       {/* onb content */}
       <div className="main">
+        
         <div className="pt-3">
-          {/* <video autoplay>
-              <source src={video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video> */}
+         
           <div
             id="carouselExampleControls"
             className="carousel slide"
