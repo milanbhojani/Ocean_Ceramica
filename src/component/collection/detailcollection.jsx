@@ -184,7 +184,7 @@ const Detailcollection = () => {
                                       className="read-more btn btn-block btn-primary"
                                       target="_blank"
                                     >
-                                      Download
+                                      View
                                     </a>
                                   </div>
                                 </div>
