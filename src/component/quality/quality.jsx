@@ -153,7 +153,7 @@ const Quality = () => {
             <div className="content-column col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
               <div className="inner-column pr-0">
                 <div className="">
-                  <img src="img/palletizing.jpg" alt="" />
+                  <img src="img/container.jpg" alt="" />
                 </div>
               </div>
               <div className="inner-column pr-0">
