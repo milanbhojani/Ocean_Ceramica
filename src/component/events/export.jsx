@@ -8,7 +8,7 @@ const Export = () => {
       if (scrollerTemp) {
         scrollerTemp.update();
       }
-    }, 500);
+    }, 1000);
   }, []);
 
   const [country, setCountry] = useState([

@@ -7,7 +7,7 @@ const Contact = () => {
       if (scrollerTemp) {
         scrollerTemp.update();
       }
-    }, 500);
+    }, 1000);
   }, []);
 
   return (

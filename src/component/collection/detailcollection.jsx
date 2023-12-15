@@ -63,7 +63,7 @@ const Detailcollection = () => {
       if (scrollerTemp) {
         scrollerTemp.update();
       }
-    }, 500);
+    }, 1000);
   }, [data, catalougeDetails]);
 
   return (

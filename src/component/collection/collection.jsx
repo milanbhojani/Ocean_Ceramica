@@ -40,7 +40,7 @@ const Collection = () => {
       if (scrollerTemp) {
         scrollerTemp.update();
       }
-    }, 500);
+    }, 1000);
   }, [data]);
 
   return (
