@@ -87,7 +87,7 @@ const About = () => {
             <div className="col">
               <div className="card">
                 <span className="year">
-                  <img src="img/O.svg" />
+                  <img src="/img/o.svg" />
                   <span className="name">Outstanding Quality</span>
                 </span>
                 <span className="geo geo-img">
@@ -97,7 +97,7 @@ const About = () => {
               </div>
               <div className="card">
                 <span className="year">
-                  <img src="img/c.svg" />
+                  <img src="/img/c.svg" />
                   <span className="name">Creative Innovation</span>
                 </span>
                 <span className="geo geo-img">
@@ -107,7 +107,7 @@ const About = () => {
               </div>
               <div className="card">
                 <span className="year">
-                  <img src="img/e.svg" />
+                  <img src="/img/e.svg" />
                   <span className="name">Environmental Responsibility</span>
                 </span>
                 <span className="geo geo-img">
@@ -117,7 +117,7 @@ const About = () => {
               </div>
               <div className="card">
                 <span className="year">
-                  <img src="img/a.svg" />
+                  <img src="/img/a.svg" />
                   <span className="name">Accessible Design</span>
                 </span>
                 <span className="geo geo-img">
@@ -127,7 +127,7 @@ const About = () => {
               </div>
               <div className="card">
                 <span className="year">
-                  <img src="img/n.svg" />
+                  <img src="/img/n.svg" />
                   <span className="name">Nurturing Partnerships</span>
                 </span>
                 <span className="geo geo-img">
