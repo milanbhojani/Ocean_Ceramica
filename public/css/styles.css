@@ -438,7 +438,6 @@
 .news-block-two .caption-box{
 	position: relative;
 	margin-top: -25px;
-	padding: 0 20px;
 }
 
 .news-block-two .caption-box .inner{
@@ -2485,7 +2484,7 @@ input[type="checkbox"] {
   width: 35px;
 
   height: 35px;
-    background-color: #fff;
+    /* background-color: #fff; */
   z-index: 1000;
 
   top: 35%;
@@ -2524,7 +2523,7 @@ input[type="checkbox"] {
 
   height: 2px;
 
-  background: #131347;
+  background: #7c7b7f;
 
   left: 0;
 /*margin: 0 5px;*/
@@ -2557,7 +2556,7 @@ input[type="checkbox"] {
 
   height: 2px;
 /*margin: 0 5px;*/
-  background: #131347;
+  background: #7c7b7f;
 
   left: 0;
 
@@ -3533,8 +3532,6 @@ font-size: 75px;
 }
 
 .objects .card .img-w {
-
-  overflow: hidden;
 
   -webkit-transform: translateX(-20%);
 
@@ -8298,7 +8295,7 @@ span.name img {
 
   .footer .bottom {
 
-    margin-top: calc(220px / 1.1);
+    margin-top: calc(50px / 1.1);
 
     margin-bottom: calc(70px / 1.1);
 
@@ -13350,7 +13347,6 @@ span.name img {
 
 .team-block .inner-box .lower-content{
 	position:relative;
-  height: 240px;
 	z-index:2;
 	text-align:center;
 	padding:18px 15px 20px;

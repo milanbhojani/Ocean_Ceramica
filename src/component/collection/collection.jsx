@@ -18,6 +18,8 @@ const Collection = () => {
         }
         const result = await response.json();
         console.log("collection", result);
+        //sort by sequence number
+        result.sort((a, b) => (a.sequence > b.sequence ? 1 : -1));
         setData(result); // Update the state with the fetched data
         let scrollerTemp = window.scroller;
         if (scrollerTemp) {
@@ -68,7 +70,7 @@ const Collection = () => {
         </div>
         <section className="team-section style-two">
           <div className="container">
-            <div className="clearfix">
+            <div className="clearfix row">
               {/* Team Block */}
               {data &&
                 data.map((item) => {
@@ -88,12 +90,19 @@ const Collection = () => {
                           </div>
                         </div>
                         <div className="lower-content">
-                          <h2>
+                          <h2
+                            style={{
+                              fontFamily: "cursive",
+                              fontSize: "2rem",
+                            }}
+                          >
                             <b>{item.Name}</b>
                           </h2>
-                          <div className="designation">{item.Description}</div>
-                          <div className="designation btn-link">
-                            <Link to="/detailcollection">View Details</Link>
+
+                          <div className="btn btn-block">
+                            <Link to={"/detailcollection/" + item.Name}>
+                              View Details about {item.Name} Collection
+                            </Link>
                           </div>
                         </div>
                       </div>

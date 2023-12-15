@@ -81,7 +81,13 @@ const Detailcollection = () => {
                   <div className="split">{data && data.Name} </div>
                   <div className="split">Collection</div>
                 </div>
-                <p>{data && data.Description}</p>
+                <p
+                  style={{
+                    fontFamily: "cursive",
+                  }}
+                >
+                  {data && data.Description}
+                </p>
 
                 <div className="main">
                   <div className="pt-3">
@@ -148,189 +154,7 @@ const Detailcollection = () => {
                   </div>
                 </div>
                 <div className="heading" style={{ textAlign: "left" }}>
-                  <div className="split">Features</div>
-                </div>
-                <div className="row">
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <FA name="calendar" size="2x"></FA>
-                        </h5>
-                        <p className="card-text">Long Durability</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h1 className="card-title">
-                          <FaBroom size={"2rem"} />
-                        </h1>
-                        <p className="card-text">Easy to Clean</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <FA name="fire" size="2x"></FA>
-                        </h5>
-                        <p className="card-text">Fire Resistant</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <FA name="tint" size="2x"></FA>
-                        </h5>
-                        <p className="card-text">Water Resistant</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <GiChemicalDrop size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Chemical Resistant</p>
-                      </div>
-                    </div>
-                  </div>
-                  {/* chemical Resistant */}
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <LuSun size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Thermal Shock Resistant</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <CiSettings size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Easy Installation</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <RxDimensions size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Dimensionally Stable</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="heading" style={{ textAlign: "left" }}>
-                  <div className="split">Applications</div>
-                </div>
-                <div className="row">
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <FA name="home" size="2x"></FA>
-                        </h5>
-                        <p className="card-text">Residential</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h1 className="card-title">
-                          <FaBuilding size={"2rem"} />
-                        </h1>
-                        <p className="card-text">Commercial Building</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <FaHotel size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Hotel, Restaurant and Cafe</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <CgGym size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Gym</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <CiHospital1 size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Hospital</p>
-                      </div>
-                    </div>
-                  </div>
-                  {/* chemical Resistant */}
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <FA name="plane" size="2x"></FA>
-                        </h5>
-                        <p className="card-text">Airport</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <FaSpa size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Spa</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <GiFamilyHouse size={"2rem"} />
-                        </h5>
-                        <p className="card-text">Hall and Corridor</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-6 col-sm-6 p-3">
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <h5 className="card-title">
-                          <BsThreeDots size={"2rem"} />
-                        </h5>
-                        <p className="card-text">And Many More</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="heading" style={{ textAlign: "left" }}>
-                  <div className="split">Catalouges</div>
+                  <div className="split">Inventory</div>
                 </div>
                 <section className="services-section-two">
                   <div className="auto-container">
@@ -371,6 +195,148 @@ const Detailcollection = () => {
                     </div>
                   </div>
                 </section>
+                <div className="heading" style={{ textAlign: "left" }}>
+                  <div className="split">Features</div>
+                </div>
+                <div className="row">
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <GiChemicalDrop size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Chemical Resistant</p>
+                      </div>
+                    </div>
+                  </div>
+                  {/* chemical Resistant */}
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <LuSun size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Thermal Resistant</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <CiSettings size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Easy Installation</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-3 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <RxDimensions size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Dimensionally Stable</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="heading" style={{ textAlign: "left" }}>
+                  <div className="split">Applications</div>
+                </div>
+                <div className="row">
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <FA name="home" size="2x"></FA>
+                        </h5>
+                        <p className="card-text">Residential</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h1 className="card-title">
+                          <FaBuilding size={"2rem"} />
+                        </h1>
+                        <p className="card-text">Commercial</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <FaHotel size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Hotel</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <CgGym size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Gym</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <CiHospital1 size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Hospital</p>
+                      </div>
+                    </div>
+                  </div>
+                  {/* chemical Resistant */}
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <FA name="plane" size="2x"></FA>
+                        </h5>
+                        <p className="card-text">Airport</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <FaSpa size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Spa</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <GiFamilyHouse size={"2rem"} />
+                        </h5>
+                        <p className="card-text">Hall and Corridor</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-2 col-md-3 col-sm-3 p-3">
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h5 className="card-title">
+                          <BsThreeDots size={"2rem"} />
+                        </h5>
+                        <p className="card-text">And Many More</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

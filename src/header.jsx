@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
+  const history = useNavigate();
   useEffect(() => {
     setTimeout(() => {
       let scrollerTemp = window.scroller;
@@ -10,6 +11,20 @@ const Header = () => {
       }
     }, 500);
   }, []);
+
+  useEffect(() => {
+    //when URL change select id burgerCloseBtn and burgerCloseBtn remove active class
+    let burgerCloseBtn = window.document.getElementById("burgerCloseBtn");
+    //check if there is an active class css then remove it
+    if (burgerCloseBtn.classList.contains("active")) {
+      burgerCloseBtn.classList.remove("active");
+    }
+    let burgerDiv = window.document.getElementById("burgetCloseDiv");
+    //check if there is an active class css then remove it
+    if (burgerDiv.classList.contains("active")) {
+      burgerDiv.classList.remove("active");
+    }
+  }, [history]);
 
   return (
     <>
@@ -22,6 +37,7 @@ const Header = () => {
             data-scroll-sticky=""
             data-scroll-target=".wrapper"
             className="burger"
+            id="burgerCloseBtn"
           />
           <a href="/" className="logo">
             <img src="img/ocean.svg" />
@@ -32,6 +48,7 @@ const Header = () => {
         </div>
       </header>
       <div
+        id="burgetCloseDiv"
         className="hidden-menu"
         data-scroll=""
         data-scroll-sticky=""

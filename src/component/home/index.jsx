@@ -1,7 +1,33 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  const [data, setData] = useState(null);
+  const [categoryDetails, setCategoryDetails] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://primedseashore.backendless.app/api/data/catalougeDetails"
+        );
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        let result = await response.json();
+        setData(result); // Update the state with the fetched data
+        console.log("cat details", result);
+      } catch (error) {
+        setError(error); // Update the state in case of an error
+      } finally {
+        setLoading(false); // Set loading to false, indicating that the data has been fetched
+      }
+    };
+    fetchData();
+  }, []);
+
   useEffect(() => {
     setTimeout(() => {
       let scrollerTemp = window.scroller;
@@ -9,73 +35,20 @@ const Home = () => {
         scrollerTemp.update();
       }
     }, 500);
-  }, []);
+  }, [data]);
 
   return (
     <>
       {/* onb content */}
       <div className="main">
-        
-        <div className="pt-3">
-         
-          <div
-            id="carouselExampleControls"
-            className="carousel slide"
-            data-ride="carousel"
-          >
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  className="d-block w-100"
-                  src="img/a.png"
-                  alt="First slide"
-                  loading="lazy"
-                />
-                
-              </div>
-              <div className="carousel-item">
-                <img
-                  className="d-block w-100"
-                  src="img/b.png"
-                  alt="Second slide"
-                  loading="lazy"
-                />
-              </div>
-              <div className="carousel-item">
-                <img
-                  className="d-block w-100"
-                  src="img/c.png"
-                  alt="Third slide"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-            <a
-              className="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="sr-only">Previous</span>
-            </a>
-            <a
-              className="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span className="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
+        <video
+          src="/img/ocean.mp4"
+          muted
+          autoPlay
+          loop
+          playsInline
+          className="moodvideo"
+        />
       </div>
       <div className="slider2">
         <div className="container">
@@ -91,7 +64,17 @@ const Home = () => {
               className="pt-4"
               style={{ textAlign: "justify", lineHeight: "initial" }}
             >
-            Since our establishment, Ocean has consistently stood as a symbol of unwavering excellence within the ceramic industry. We delight in showcasing our splendid array of collections that surpass the commonplace, deriving inspiration from the unrefined and wild splendor of nature. Through our offerings, we strive to encapsulate the authentic essence of nature in its most pristine manifestations, crafting surfaces that are not only visually breathtaking but also a manifestation of artistic and innovative purity. Our commitment is to go beyond the ordinary, creating visually striking surfaces that embody the very essence of art and innovation.
+              Since our establishment, Ocean has consistently stood as a symbol
+              of unwavering excellence within the ceramic industry. We delight
+              in showcasing our splendid array of collections that surpass the
+              commonplace, deriving inspiration from the unrefined and wild
+              splendor of nature. Through our offerings, we strive to
+              encapsulate the authentic essence of nature in its most pristine
+              manifestations, crafting surfaces that are not only visually
+              breathtaking but also a manifestation of artistic and innovative
+              purity. Our commitment is to go beyond the ordinary, creating
+              visually striking surfaces that embody the very essence of art and
+              innovation.
             </p>
             <br />
             <br />
@@ -101,47 +84,118 @@ const Home = () => {
             <br />
           </div>
         </div>
-
-        <div className="row">
-          <div className="col-6">
-            <Link to="/collection">
-              {" "}
-              <img
-                src="img/COLLECTION/INTENDO COLL/pietra Intendo coll.jpg"
-                className="img"
-                loading="lazy"
-              />{" "}
-            </Link>
-          </div>
-          <div className="col-6">
-            <Link to="/collection">
-              {" "}
-              <img
-                src="img/COLLECTION/PRISM COLL/NOVELLA_PRISM COLL_60X120.jpg"
-                className="img"
-                loading="lazy"
-              />{" "}
-            </Link>
-          </div>
-          <div className="col-6">
-            <Link to="/collection">
-              {" "}
-              <img
-                src="img/COLLECTION/TREAURE COLL/120X240.jpg"
-                className="img"
-                loading="lazy"
-              />{" "}
-            </Link>{" "}
-          </div>
-          <div className="col-6">
-            <Link to="/collection">
-              {" "}
-              <img
-                src="img/COLLECTION/VIVID COLL/MORGAN_VIVID_FRONT PG.jpg"
-                className="img"
-                loading="lazy"
-              />{" "}
-            </Link>{" "}
+        <div className="container-full">
+          <div
+            className="center is-inview"
+            data-scroll=""
+            data-scroll-speed={4}
+            style={{
+              transform:
+                "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 78.7937, 0, 1)",
+            }}
+          >
+            <div className="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+              <div
+                className="swiper-wrapper"
+                style={{ transform: "translate3d(0px, 0px, 0px)" }}
+                id="swiper-wrapper-b1fc9a8a4d56aabf"
+                aria-live="polite"
+              >
+                <div
+                  className="swiper-slide swiper-slide-active"
+                  style={{ width: 360 }}
+                  role="group"
+                  aria-label="1 / 4"
+                >
+                  <span>
+                    <Link to="detailcollection/Intendo">
+                      {" "}
+                      <img src="img/aaa.jpg" className="img" />{" "}
+                    </Link>{" "}
+                  </span>
+                  {/*<span style="background: url('img/gr1.png') no-repeat 50%/cover;"><br>*/}
+                  {/* <span  class="pbx">elements collection</span></span> */}
+                </div>
+                <div
+                  className="swiper-slide swiper-slide-next"
+                  style={{ width: 360 }}
+                  role="group"
+                  aria-label="2 / 4"
+                >
+                  <span>
+                    <Link to="detailcollection/Prism">
+                      {" "}
+                      <img src="img/bbb.jpg" className="img" />{" "}
+                    </Link>
+                  </span>
+                  {/*<span style="background: url('img/gr2.png') no-repeat 50%/cover;"><br>*/}
+                  {/* <span  class="pbx">absolute collection</span></span> */}
+                </div>
+                <div
+                  className="swiper-slide"
+                  style={{ width: 360 }}
+                  role="group"
+                  aria-label="3 / 4"
+                >
+                  <span>
+                    <Link to="detailcollection/Treaure">
+                      {" "}
+                      <img src="img/ccc.jpg" className="img" />{" "}
+                    </Link>
+                  </span>
+                  {/*<span style="background: url('img/gr3.png') no-repeat 50%/cover;"><br>*/}
+                  {/* <span  class="pbx">canvas collection</span></span> */}
+                </div>
+                <div
+                  className="swiper-slide"
+                  style={{ width: 360 }}
+                  role="group"
+                  aria-label="4 / 4"
+                >
+                  <span>
+                    <Link to="detailcollection/Vivid">
+                      {" "}
+                      <img src="img/ddd.jpg" className="img" />{" "}
+                    </Link>
+                  </span>
+                  {/*<span style="background: url('img/gr4.png') no-repeat 50%/cover;">*/}
+                  <br />
+                  {/* <span  class="pbx">artwork collection</span></span> */}
+                </div>
+              </div>
+              <span
+                className="cursor3"
+                style={{
+                  left: "-20px",
+                  top: "47.2219px",
+                  opacity: 0,
+                  transform: "scale(0)",
+                }}
+              />
+              <button
+                className="prev swiper-button-disabled swiper-button-lock"
+                tabIndex={-1}
+                aria-label="Previous slide"
+                aria-controls="swiper-wrapper-b1fc9a8a4d56aabf"
+                aria-disabled="true"
+              />
+              <button
+                className="next swiper-button-disabled swiper-button-lock"
+                tabIndex={-1}
+                aria-label="Next slide"
+                aria-controls="swiper-wrapper-b1fc9a8a4d56aabf"
+                aria-disabled="true"
+              />
+              <span
+                className="swiper-notification"
+                aria-live="assertive"
+                aria-atomic="true"
+              />
+            </div>
+            <div className="paggination swiper-pagination-fraction swiper-pagination-lock">
+              <span className="swiper-pagination-current">01</span> /{" "}
+              <span className="swiper-pagination-total">01</span>
+            </div>
           </div>
         </div>
       </div>
@@ -167,7 +221,7 @@ const Home = () => {
             <a href="#" className="img">
               <span
                 style={{
-                  background: 'url("img/director.jpg") no-repeat 50%/cover',
+                  background: 'url("img/factory.png") no-repeat 50%/cover',
                 }}
               />
             </a>
@@ -189,9 +243,6 @@ const Home = () => {
                 sustainability.
               </span>
             </a>
-            <a href="about.html" className="a">
-              Learn more
-            </a>
           </div>
         </div>
       </div>
@@ -210,182 +261,136 @@ const Home = () => {
         <div className="container-full">
           <div className="flex">
             <div className="col">
-              <div className="card">
-                <div className="img">
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=17">
-                    <div className="img-w">
-                      <span
-                        style={{
-                          background:
-                            'url("img/gvtpgvt.jpg") no-repeat 50%/cover',
-                        }}
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex">
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=17">
-                    <span data-hover="GVT/PGVT">GVT/PGVT </span>
-                  </a>
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=17">
-                    <span data-hover="Explore more">Explore more</span>
-                  </a>
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=17">
-                    {" "}
-                    120x60cm
-                  </a>
-                </div>
-              </div>
-              <div className="card">
-                <div className="img">
-                  <a href="#">
-                    <div className="img-w">
-                      {/*<span style="background:url('img/gvt33.jpg') no-repeat 50%/cover;"></span>*/}
-                      <span
-                        style={{
-                          background:
-                            'url("img/previes/can/ANVI-TUSK.jpg") no-repeat 50%/cover',
-                        }}
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex">
-                  <a href="#">
-                    <span data-hover="AURIKA">AURIKA</span>
-                  </a>
-                  <a href="#">
-                    <span data-hover="Explore more">Explore more</span>
-                  </a>
-                  <a href="#">120X180cm</a>
-                </div>
-              </div>
+              {data &&
+                data
+                  .filter((item, index) => index < 2)
+                  .map((item) => {
+                    return (
+                      <>
+                        <div className="card">
+                          <div className="img">
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <div className="img-w">
+                                <span
+                                  style={{
+                                    background: `url(${item.Image}) no-repeat 50%/cover`,
+                                  }}
+                                />
+                              </div>
+                            </Link>
+                          </div>
+                          <div className="flex">
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <span data-hover={item.Name}>{item.Name}</span>
+                            </Link>
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <span data-hover="Explore more">
+                                Explore more
+                              </span>
+                            </Link>
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              {item.Collection}
+                            </Link>
+                          </div>
+                        </div>
+                      </>
+                    );
+                  })}
             </div>
             <div className="col" data-scroll="" data-scroll-speed={-1}>
-              <div className="card">
-                <div className="img">
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=6">
-                    <div className="img-w">
-                      <span
-                        style={{
-                          background: 'url("img/ele.jpg") no-repeat 50%/cover',
-                        }}
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex">
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=6">
-                    <span data-hover="Engrave Collection">
-                      Engrave Collection
-                    </span>
-                  </a>
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=6">
-                    <span data-hover="Explore more">Explore more</span>
-                  </a>
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=60x120cm&collection_id=6">
-                    120X60cm
-                  </a>
-                </div>
-              </div>
-              <div className="card">
-                <div className="img">
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=80x160cm&collection_id=21">
-                    <div className="img-w">
-                      <span
-                        style={{
-                          background:
-                            'url("img/gvt22.jpg") no-repeat 50%/cover',
-                        }}
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex">
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=80x160cm&collection_id=21">
-                    <span data-hover="GVT / PGVT">GVT / PGVT </span>
-                  </a>
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=80x160cm&collection_id=21">
-                    <span data-hover="Explore more">Explore more</span>
-                  </a>
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=80x160cm&collection_id=21">
-                    160x80cm
-                  </a>
-                </div>
-              </div>
+              {data &&
+                data
+                  .filter((item, index) => index > 1 && index < 4)
+                  .map((item) => {
+                    return (
+                      <>
+                        <div className="card">
+                          <div className="img">
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <div className="img-w">
+                                <span
+                                  style={{
+                                    background: `url(${item.Image}) no-repeat 50%/cover`,
+                                  }}
+                                />
+                              </div>
+                            </Link>
+                          </div>
+                          <div className="flex">
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <span data-hover={item.Name}>{item.Name}</span>
+                            </Link>
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <span data-hover="Explore more">
+                                Explore more
+                              </span>
+                            </Link>
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              {item.Collection}
+                            </Link>
+                          </div>
+                        </div>
+                      </>
+                    );
+                  })}
             </div>
             <div className="col">
-              <div className="card">
-                <div className="img">
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=30x60cm&collection_id=5">
-                    <div className="img-w">
-                      <video
-                        src="img/es.mp4"
-                        muted=""
-                        autoPlay=""
-                        loop=""
-                        playsInline=""
-                        style={{ maxWidth: "100%", height: "auto" }}
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex">
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=30x60cm&collection_id=5">
-                    <span data-hover="Exotic Surface">Exotic Surface</span>
-                  </a>
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=30x60cm&collection_id=5">
-                    <span data-hover="Explore more">Explore more</span>
-                  </a>
-                  <a href="https://essencetiles.com/sub-collection.php?collection_slug=30x60cm&collection_id=5">
-                    60x30cm
-                  </a>
-                </div>
-              </div>
-              <div className="card">
-                <div className="img">
-                  <a href="#">
-                    <div className="img-w">
-                      {/*<img src="img/previes/can/SAINT-LAURENT-BLACK.jpg" >*/}
-                      <span
-                        style={{
-                          background:
-                            'url("img/previes/can/SAINT-LAURENT-BLACK.jpg") no-repeat 50%/cover',
-                        }}
-                      />
-                    </div>
-                  </a>
-                </div>
-                <div className="flex">
-                  <a href="#">
-                    <span data-hover="SPREAD">Spread</span>
-                  </a>
-                  <a href="#">
-                    <span data-hover="Explore more">Explore more</span>
-                  </a>
-                  <a href="#">120x280cm</a>
-                </div>
-              </div>
+              {data &&
+                data
+                  .filter((item, index) => index > 3 && index < 6)
+                  .map((item) => {
+                    return (
+                      <>
+                        <div className="card">
+                          <div className="img">
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <div className="img-w">
+                                <span
+                                  style={{
+                                    background: `url(${item.Image}) no-repeat 50%/cover`,
+                                  }}
+                                />
+                              </div>
+                            </Link>
+                          </div>
+                          <div className="flex">
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <span data-hover={item.Name}>{item.Name}</span>
+                            </Link>
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              <span data-hover="Explore more">
+                                Explore more
+                              </span>
+                            </Link>
+                            <Link to={"/detailcollection/" + item.Collection}>
+                              {item.Collection}
+                            </Link>
+                          </div>
+                        </div>
+                      </>
+                    );
+                  })}
             </div>
           </div>
         </div>
-        <div className="flex " style={{ marginTop: "-60px", marginBottom: 80 }}>
-         
-        </div>
+        <div
+          className="flex "
+          style={{ marginTop: "-60px", marginBottom: 80 }}
+        ></div>
       </div>
       <div style={{ background: "#232323", paddingBottom: 90, paddingTop: 90 }}>
         <div className="container">
           <div className=" flex">
             <div className="accordion ">
-            <div
+              <div
                 className="left"
                 style={{ width: "35%", float: "left", marginRight: "5%" }}
               >
-              <div className="accordion__header is-active">
-                <h2>Corporate Headquarters</h2>
-                <span className="accordion__toggle" />
-              </div>
-              <p className="ani">
+                <div className="accordion__header is-active">
+                  <h2>Corporate Headquarters</h2>
+                  <span className="accordion__toggle" />
+                </div>
+                <p className="ani">
                   <span style={{ fontWeight: 400, letterSpacing: 1 }}></span>
                   <br />A hub bustling with business-suited experts. Within
                   these walls, our team crafts wonders. Our extensive network
@@ -394,19 +399,25 @@ const Home = () => {
                   Ocean Ceramica offices are meticulously crafted to inspire and
                   foster collaboration, streamlining the process of creation.
                 </p>
-              <div className="accordion__header is-active">
-                <h2>Manufacturing units</h2>
-                <span className="accordion__toggle" />
-              </div>
+                <div className="accordion__header is-active">
+                  <h2>Manufacturing units</h2>
+                  <span className="accordion__toggle" />
+                </div>
 
-              
                 <p className="ani">
                   <span style={{ fontWeight: 400, letterSpacing: 1 }}></span>
                   <br />
-Constantly astonishing the market with enchanting surprises, Essence Tiles has established fully integrated manufacturing facilities. Empowered by cutting-edge machinery, our manufacturing unit excels in producing large quantities of ceramic products while consistently meeting and exceeding all industrial quality parameters.
+                  With a remarkable daily production capacity, our
+                  state-of-the-art facility churns out 92,000 square meters of
+                  top-quality porcelain tiles each day, setting new benchmarks
+                  in the industry. Moreover, our proficiency extends to crafting
+                  exquisite porcelain slabs, generating an impressive 14,000
+                  square meters daily. At Ocean Ceramica, we're dedicated to
+                  meeting your demands with unparalleled efficiency and
+                  uncompromising quality.
                 </p>
               </div>
-              
+
               <div
                 className=" right"
                 style={{ width: "60%", float: "right", marginTop: "-80px" }}

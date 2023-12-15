@@ -13,8 +13,8 @@ const Infra = () => {
   return (
     <>
       <div className="contacts">
-        <h1 className="marquee" data-title="Ocean Ceramica">
-          Ocean Ceramica
+        <h1 className="marquee" data-title=" Our Technology">
+          Our Technology
         </h1>
         <div className="top">
           <form>
@@ -38,7 +38,7 @@ const Infra = () => {
             <p className="col">
               <span>
                 {/*<span style="margin-bottom:12px"> <b> Essence: Unleashing the Power of Innovative Ceramic Products.</b></span><br>*/}
-                Welcome to the Vetican Granito, where innovation meets
+                Welcome to the Ocean Ceramica, where innovation meets
                 craftsmanship to create stunning porcelain slabs that redefine
                 excellence in the industry. Discover the cutting-edge
                 technologies that drive our manufacturing process, ensuring the
@@ -62,7 +62,7 @@ const Infra = () => {
                 <h2>CONTINUA+ Compaction Technology for Slabs and Tiles</h2>
                 <div className="text pt-4">
                   <p>
-                    CONTINUA+ at Vetican Granito revolutionizes slab
+                    CONTINUA+ at Ocean Ceramica revolutionizes slab
                     manufacturing, offering highly customizable premium large
                     slabs. With Widths up to 1200mm, Heights up to 3200mm, and
                     Thickness from 6mm to 15mm, Redefine your projects with our
@@ -116,7 +116,7 @@ const Infra = () => {
                     Printing up to 1400mm width, this single-pass printer with
                     Durst's high-definition technology ensures unmatched
                     precision and repeatability, setting industry standards at
-                    Vetican Granito.
+                    Ocean Ceramica.
                   </p>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const Infra = () => {
               </div>
               <div className="inner-column pr-0">
                 <div className="">
-                  <img src="img/3.png" alt="" />
+                  <img src="img/4.png" alt="" />
                 </div>
               </div>
             </div>
@@ -157,7 +157,7 @@ const Infra = () => {
             <div className="content-column col-xl-6 col-lg-6 col-md-12 col-sm-12 ">
               <div className="inner-column pr-0">
                 <div className="">
-                  <img src="img/4.png" alt="" />
+                  <img src="img/3.png" alt="" />
                 </div>
               </div>
               <div className="inner-column pr-0">

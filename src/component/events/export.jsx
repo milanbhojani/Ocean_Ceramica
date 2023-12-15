@@ -16,32 +16,36 @@ const Export = () => {
     { Name: "Germany", Code: "DE" },
     { Name: "Russia", Code: "RU" },
     { Name: "Turkey", Code: "TR" },
-    { Name: "Maxico", Code: "MX" },
+    { Name: "Mexico", Code: "MX" },
     { Name: "France", Code: "FR" },
     { Name: "greece", Code: "GR" },
     { Name: "United Kingdom", Code: "GB" },
     { Name: "Poland", Code: "PL" },
-    { Name: "Balarus", Code: "BY" },
+    { Name: "Belarus", Code: "BY" },
     { Name: "USA", Code: "US" },
     { Name: "Canada", Code: "CA" },
     { Name: "Brazil", Code: "BR" },
     { Name: "Colombia", Code: "CO" },
     { Name: "Peru", Code: "PE" },
     { Name: "Venezuela", Code: "VE" },
-    { Name: "Jamica", Code: "JM" },
-    { Name: "Azarbaijan", Code: "AZ" },
+    { Name: "Jamaica", Code: "JM" },
+    { Name: "Azerbaijan", Code: "AZ" },
     { Name: "Cyprus", Code: "CY" },
     { Name: "Iraq", Code: "IQ" },
     { Name: "Jordan", Code: "JO" },
     { Name: "Kuwait", Code: "KW" },
     { Name: "Lebanon", Code: "LB" },
+    {
+      Name: "Australia",
+      Code: "AU",
+    },
     { Name: "UAE", Code: "AE" },
     { Name: "Saudi Arabia", Code: "SA" },
-    { Name: "Omam", Code: "OM" },
+    { Name: "Oman", Code: "OM" },
     { Name: "Qatar", Code: "QA" },
-    { Name: "Izrael", Code: "IL" },
+    { Name: "Israel", Code: "IL" },
     { Name: "Belgium", Code: "BE" },
-    { Name: "guaemala", Code: "GT" },
+    { Name: "Guatemala", Code: "GT" },
     { Name: "Singapore", Code: "SG" },
     { Name: "Egypt", Code: "EG" },
     { Name: "Vietnam", Code: "VN" },
@@ -49,16 +53,30 @@ const Export = () => {
     { Name: "Mauritius", Code: "MU" },
     { Name: "papua New Guinea", Code: "PG" },
     { Name: "Bolivia", Code: "BO" },
-    { Name: "Irlend", Code: "IE" },
+    { Name: "Ireland", Code: "IE" },
     { Name: "Romania", Code: "RO" },
+    { Name: "Ukraine", Code: "UA" },
+    {
+      Name: "South Africa",
+      Code: "ZA",
+    },
+
+    {
+      Name: "New Zealand",
+      Code: "NZ",
+    },
+    {
+      Name: "Netherlands",
+      Code: "NL",
+    },
   ]);
 
   return (
     <>
       <div className="contacts">
         <div className="container-full">
-          <h1 className="marquee" data-title="Ocean Ceramica">
-            Ocean Ceramica
+          <h1 className="marquee" data-title="Export">
+            Export
           </h1>
           <div className="top">
             <form action="#">
@@ -73,7 +91,7 @@ const Export = () => {
                   display: "block",
                 }}
               >
-                Ocean Ceramica Is Proud To Have A Presence In More Than 87+
+                Ocean Ceramica Is Proud To Have A Presence In More Than 40+
                 Countries Across The World.
               </span>
             </form>
@@ -94,7 +112,7 @@ const Export = () => {
                       <span>
                         {/*<span style="margin-bottom:12px"> <b> Essence: Unleashing the Power of Innovative Ceramic Products.</b></span><br>*/}
                         Ocean Ceramica Dispatch Centre is located about 184 kms
-                        from Mundra port,the largest port in India.Well
+                        from Mundra port,the largest port in India. Well
                         connected, the port is easily accessible by road and its
                         geographical proximity and easy connectivity ensure
                         minimum time lag for a shipment. The port of Mundra is
@@ -132,7 +150,7 @@ const Export = () => {
               </div>
               {country.map((item, index) => {
                 return (
-                  <div className="col-lg-2 col-md-2 col-xs-4 text-center mb-4">
+                  <div className="col-lg-1 col-md-1 col-xs-1 text-center mb-1">
                     <Flag
                       code={item.Code}
                       height={"100px"}

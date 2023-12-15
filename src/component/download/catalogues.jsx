@@ -17,6 +17,8 @@ const Catalogues = () => {
         }
         const result = await response.json();
         console.log("catlouge --", result);
+        //sort by sequence number
+        result.sort((a, b) => (a.sequence > b.sequence ? 1 : -1));
         setData(result); // Update the state with the fetched data
       } catch (error) {
         setError(error); // Update the state in case of an error
@@ -56,27 +58,77 @@ const Catalogues = () => {
           className="container catalogue-cantainer"
           style={{ paddingBottom: "0 !important" }}
         >
+          <div className="heading pb-3" style={{ textAlign: "left" }}>
+            <div style={{ display: "block", position: "relative" }}>
+              <span
+                style={{
+                  display: "inline-block",
+                  transform: "translate(0px, 0px)",
+                }}
+              >
+                Porcelain Tiles
+              </span>{" "}
+            </div>
+          </div>
           <div className="row">
             {data &&
-              data.map((item) => {
-                return (
-                  <>
-                    <div className="col-xl-3 col-lg-4 col-md-6">
-                      <div className="cat-img">
-                        <Link to={"/brouchers/" + item.Name + "/all"}>
-                          <img src={item.Image} className="rounded " alt="" />
-                        </Link>
+              data
+                .filter((item) => item.Type === "tiles")
+                .map((item) => {
+                  return (
+                    <>
+                      <div className="col-xl-3 col-lg-4 col-md-6">
+                        <div className="cat-img">
+                          <Link to={"/brouchers/" + item.Name + "/all"}>
+                            <img src={item.Image} className="rounded " alt="" />
+                          </Link>
+                        </div>
+                        <div className="cat-title">
+                          <h3>{item.Name}</h3>
+                          <Link to={"/brouchers/" + item.Name + "/all"}>
+                            View all
+                          </Link>
+                        </div>
                       </div>
-                      <div className="cat-title">
-                        <h3>{item.Name}</h3>
-                        <Link to={"/brouchers/" + item.Name + "/all"}>
-                          View all
-                        </Link>
+                    </>
+                  );
+                })}
+          </div>
+          <div className="heading pb-3" style={{ textAlign: "left" }}>
+            <div style={{ display: "block", position: "relative" }}>
+              <span
+                style={{
+                  display: "inline-block",
+                  transform: "translate(0px, 0px)",
+                }}
+              >
+                Porcelain Slabs
+              </span>{" "}
+            </div>
+          </div>
+          <div className="row">
+            {data &&
+              data
+                .filter((item) => item.Type === "slabs")
+                .map((item) => {
+                  return (
+                    <>
+                      <div className="col-xl-3 col-lg-4 col-md-6">
+                        <div className="cat-img">
+                          <Link to={"/brouchers/" + item.Name + "/all"}>
+                            <img src={item.Image} className="rounded " alt="" />
+                          </Link>
+                        </div>
+                        <div className="cat-title">
+                          <h3>{item.Name}</h3>
+                          <Link to={"/brouchers/" + item.Name + "/all"}>
+                            View all
+                          </Link>
+                        </div>
                       </div>
-                    </div>
-                  </>
-                );
-              })}
+                    </>
+                  );
+                })}
           </div>
         </div>
       </div>
