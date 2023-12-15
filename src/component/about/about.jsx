@@ -75,7 +75,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="part " style={{ backgroundColor: "white !important" }}>
+      <div
+        className="part pb-5"
+        style={{ backgroundColor: "white !important" }}
+      >
         <div className="container-full">
           <div className="part1 flex">
             <div className="col">
