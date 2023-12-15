@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <>
       {/* onb content */}
-      <div className="main">
+      <div className="main pt-3">
         <video
           src="/img/ocean.mp4"
           muted
@@ -64,16 +64,16 @@ const Home = () => {
               className="pt-4"
               style={{ textAlign: "justify", lineHeight: "initial" }}
             >
-              Since our establishment, Ocean has consistently stood as a symbol
-              of unwavering excellence within the ceramic industry. We delight
-              in showcasing our splendid array of collections that surpass the
-              commonplace, deriving inspiration from the unrefined and wild
-              splendor of nature. Through our offerings, we strive to
-              encapsulate the authentic essence of nature in its most pristine
-              manifestations, crafting surfaces that are not only visually
-              breathtaking but also a manifestation of artistic and innovative
-              purity. Our commitment is to go beyond the ordinary, creating
-              visually striking surfaces that embody the very essence of art and
+              Since our inception, Ocean has epitomized unparalleled excellence
+              within the realm of ceramics. We take immense pride in curating an
+              extraordinary range of collections that transcend the ordinary,
+              drawing inspiration from the untamed beauty of nature at its most
+              raw and magnificent. Our creations mirror the unbridled essence of
+              the natural world, capturing its pristine allure in every design,
+              infusing surfaces with not just aesthetic grandeur but also an
+              essence of artistic ingenuity and innovative spirit. Our
+              unwavering dedication propels us to surpass expectations, crafting
+              surfaces that encapsulate the very essence of artistic oceanic
               innovation.
             </p>
             <br />

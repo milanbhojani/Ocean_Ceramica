@@ -282,7 +282,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <a
-                    href="https://goo.gl/maps/naZWp5CLm91jTE9F7"
+                    href="https://maps.app.goo.gl/7EWhNGMwtBnWNRPS6"
                     target="_blank"
                     className="underline"
                   >
@@ -306,7 +306,7 @@ const Footer = () => {
               </span>
               <ul>
                 <li>
-                  <a href="mailto:info@essencetiles.com" className="underline">
+                  <a href="mailto:info@Oceanceramica.com" className="underline">
                     info@oceanceramica.com
                   </a>
                 </li>
@@ -319,7 +319,7 @@ const Footer = () => {
               </span>
               <ul>
                 <li>
-                  <a href="tel:+918980077077" className="underline">
+                  <a href="tel:+917202099299" className="underline">
                     +91 72020 99299
                   </a>
                 </li>
