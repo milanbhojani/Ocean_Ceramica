@@ -306,7 +306,7 @@ const Footer = () => {
               </span>
               <ul>
                 <li>
-                  <a href="mailto:info@Oceanceramica.com" className="underline">
+                  <a href="mailto:info@oceanceramica.com" className="underline">
                     info@oceanceramica.com
                   </a>
                 </li>
@@ -329,7 +329,7 @@ const Footer = () => {
             <div className="bottom">
               <span className="left">
                 {" "}
-                2023 Ocean Ceramica. All rights reserved by Ocean Ceramica .{" "}
+                © Ocean Ceramica. All rights reserved by Ocean Ceramica.{" "}
               </span>
             </div>
           </div>
